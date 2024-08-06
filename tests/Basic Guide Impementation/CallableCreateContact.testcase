@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="84878ab0-ca6b-409a-a20d-df2a85660cd3" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="09b5cb05-4547-49b0-9930-9ce550a12bf6" name="ApexConnect" testItemId="1" title="Salesforce Connect: SalesforceConnection (Test)">
+      <arguments>
+        <argument argId="b65a510c-a313-4890-b940-a01d2680ad80" id="connectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">83a6bd34-fd07-439d-9943-784e3390844a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument argId="672f6207-d2a2-42c2-8869-967ed3f16a58" id="reuseConnectionName">
+          <value class="variable">
+            <path element="reuseConnectionName"/>
+          </value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Reuse</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">LightningSales</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="624d9d82-5e1a-427c-bbc6-1bbf6dddb879" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Contact=&gt;ContactId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Contact</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">ContactId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument argId="2b7c3855-bf88-442b-872a-f0947d923cc6" id="LastName">
+          <value class="variable">
+            <path element="LastName"/>
+          </value>
+        </argument>
+        <argument argId="c92b7ba1-95d9-47b8-8463-18700d397474" id="AccountId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument argId="29993d0f-c91a-4dbe-b20f-455e8d759211" id="FirstName">
+          <value class="variable">
+            <path element="FirstName"/>
+          </value>
+        </argument>
+        <argument argId="c022b80d-6ba0-4e7d-867d-50a8e9ba74d9" id="Salutation">
+          <value class="variable">
+            <path element="Salutation"/>
+          </value>
+        </argument>
+        <argument argId="41c65d74-8327-4af8-829f-c6f1c968af52" id="Email">
+          <value class="variable">
+            <path element="Email"/>
+          </value>
+        </argument>
+        <argument argId="e62ab98a-d7c6-4726-9915-1ad30c872514" id="Phone">
+          <value class="variable">
+            <path element="Phone"/>
+          </value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" title="LastName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=AccountId" name="AccountId" title="AccountId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=FirstName" name="FirstName" title="FirstName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Salutation" name="Salutation" title="Salutation"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" title="Email"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" title="Phone"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+  <params>
+    <param linkedToUrl="provar:hasvalue:29993d0f-c91a-4dbe-b20f-455e8d759211" modelBinding="sf:ui:binding:object?object=Contact&amp;field=FirstName" name="FirstName" passwordVariableAllowed="true" title="FirstName">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:2b7c3855-bf88-442b-872a-f0947d923cc6" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" passwordVariableAllowed="true" title="LastName">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:41c65d74-8327-4af8-829f-c6f1c968af52" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" passwordVariableAllowed="true" title="Email">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:e62ab98a-d7c6-4726-9915-1ad30c872514" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" passwordVariableAllowed="true" title="Phone">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:c022b80d-6ba0-4e7d-867d-50a8e9ba74d9" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Salutation" name="Salutation" passwordVariableAllowed="true" title="Salutation">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:c92b7ba1-95d9-47b8-8463-18700d397474" modelBinding="sf:ui:binding:object?object=Contact&amp;field=AccountId" name="AccountId" passwordVariableAllowed="true" title="Account_Id">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:672f6207-d2a2-42c2-8869-967ed3f16a58" name="reuseConnectionName" passwordVariableAllowed="true" title="Override Connection">
+      <summary>The name of an already opened connect to re-use.</summary>
+      <type>
+        <connectionType>
+          <constraints>
+            <valueConstraint name="variableName">true</valueConstraint>
+            <valueConstraint name="requiredCapabilities">sfSoapConnect</valueConstraint>
+          </constraints>
+        </connectionType>
+      </type>
+    </param>
+  </params>
+  <outputParams>
+    <param name="ContactId" passwordVariableAllowed="true" title="ContactId">
+      <summary>The name under which the resulting Object Id will be stored.</summary>
+      <type>
+        <textType>
+          <constraints>
+            <valueConstraint name="minLength">0</valueConstraint>
+            <valueConstraint name="maxLength">9999</valueConstraint>
+          </constraints>
+        </textType>
+      </type>
+      <sourceValue class="variable">
+        <path element="ContactId"/>
+      </sourceValue>
+    </param>
+  </outputParams>
+  <args>
+    <argument id="FirstName">
+      <value class="value" valueClass="string">Om</value>
+    </argument>
+    <argument id="LastName">
+      <value class="value" valueClass="string">Rusia</value>
+    </argument>
+    <argument id="Email">
+      <value class="value" valueClass="string">Om@gmail.com</value>
+    </argument>
+    <argument id="Phone">
+      <value class="value" valueClass="string">7217819987</value>
+    </argument>
+    <argument id="Salutation">
+      <value class="value" valueClass="string">Mr.</value>
+    </argument>
+    <argument id="AccountId"/>
+    <argument id="reuseConnectionName"/>
+  </args>
+  <outputArgs>
+    <outputArgument id="ContactId">
+      <name class="value" valueClass="string">ContactId</name>
+    </outputArgument>
+  </outputArgs>
+</testCase>

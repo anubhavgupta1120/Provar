@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="672969fd-efdd-4e0d-aa88-25677e6f055d" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="53f96af2-276d-48b0-9b2e-034ffcbc1770" name="ApexConnect" testItemId="1" title="Salesforce Connect: SalesforceConnection (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">83a6bd34-fd07-439d-9943-784e3390844a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="40a700ed-28e9-410f-8dc8-e4aea5b414f2" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Contact=&gt;ContactId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Contact</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">ContactId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument argId="aef0c9aa-6c3e-4623-a9b6-ef79f583c52c" id="LastName">
+          <value class="variable">
+            <path element="LastName"/>
+          </value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument argId="9aa51b54-1dbd-40f0-97d9-a5ea9cc6aa20" id="Phone">
+          <value class="variable">
+            <path element="Phone"/>
+          </value>
+        </argument>
+        <argument argId="0ea139d6-148a-44b5-8b5e-8fa65e5ddc7b" id="Email">
+          <value class="variable">
+            <path element="Email"/>
+          </value>
+        </argument>
+        <argument argId="b035fef6-85b0-4538-bf89-93d5a00fc650" id="Salutation">
+          <value class="variable">
+            <path element="Salutation"/>
+          </value>
+        </argument>
+        <argument argId="89419c14-3b36-4def-97eb-3fb4cbdf14ee" id="FirstName">
+          <value class="variable">
+            <path element="FirstName"/>
+          </value>
+        </argument>
+        <argument id="AccountId"/>
+        <argument argId="33e841fd-1ded-4aee-b16a-1b5c7cb0b5a8" id="Title">
+          <value class="variable">
+            <path element="Title"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" title="LastName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" title="Email"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Salutation" name="Salutation" title="Salutation"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=FirstName" name="FirstName" title="FirstName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=AccountId" name="AccountId" title="AccountId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Title" name="Title" title="Title"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexReadObject" guid="77cf3dc4-0d23-4e32-b9db-8f059faef59a" name="ApexReadObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand" testItemId="3" title="Read Object: Contact = {ContactId}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Contact</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ContactRead</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="ContactId"/>
+          </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="Phone">
+          <value class="value" valueClass="string">(512) 757-6000</value>
+        </argument>
+        <argument id="Email">
+          <value class="value" valueClass="string">rose@edge.com</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <resultAssertions>
+        <resultAssertion resultName="Phone" title="Check Phone">
+          <expected class="variable">
+            <path element="Phone"/>
+          </expected>
+        </resultAssertion>
+        <resultAssertion resultName="Email" title="Check Email">
+          <expected class="variable">
+            <path element="Email"/>
+          </expected>
+        </resultAssertion>
+      </resultAssertions>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" title="Email"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexUpdateObject" guid="a60b4067-ce20-4613-abd8-a2789c4a2887" name="ApexUpdateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand" testItemId="4" title="Update Object: Contact = {ContactId}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Contact</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="ContactId"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ContactUpdated</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="LastName">
+          <value class="value" valueClass="string">Gupta</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" title="LastName"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexReadObject" guid="78efeee6-d6a5-41d2-913b-f93f25fbaac7" name="ApexReadObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand" testItemId="5" title="Read Object: Contact = {ContactId}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Contact</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ContactRead</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="ContactId"/>
+          </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="LastName">
+          <value class="value" valueClass="string">Gonzalez</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <resultAssertions>
+        <resultAssertion resultName="LastName" title="Check LastName">
+          <expected class="value" valueClass="string">Gupta</expected>
+        </resultAssertion>
+      </resultAssertions>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" title="Last Name"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexDeleteObject" guid="8f59f8ef-d295-44ce-a6db-8157b62ae32c" name="ApexDeleteObject" testItemId="6" title="Delete Object: {ContactId}">
+      <arguments>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="ContactId"/>
+          </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+  <params>
+    <param linkedToUrl="provar:hasvalue:b035fef6-85b0-4538-bf89-93d5a00fc650" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Salutation" name="Salutation" passwordVariableAllowed="true" title="Salutation">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:89419c14-3b36-4def-97eb-3fb4cbdf14ee" modelBinding="sf:ui:binding:object?object=Contact&amp;field=FirstName" name="FirstName" passwordVariableAllowed="true" title="First Name">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:aef0c9aa-6c3e-4623-a9b6-ef79f583c52c" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" passwordVariableAllowed="true" title="Last Name">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:33e841fd-1ded-4aee-b16a-1b5c7cb0b5a8" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Title" name="Title" passwordVariableAllowed="true" title="Title">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:15cb5660-972d-4ff8-a181-fb83d6238ebf" modelBinding="sf:ui:binding:object?object=Contact&amp;field=AccountId" name="AccountId" passwordVariableAllowed="true" title="Account Id">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:9aa51b54-1dbd-40f0-97d9-a5ea9cc6aa20" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" passwordVariableAllowed="true" title="Phone">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:0ea139d6-148a-44b5-8b5e-8fa65e5ddc7b" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" passwordVariableAllowed="true" title="Email">
+      <summary/>
+    </param>
+  </params>
+  <args>
+    <argument id="Salutation">
+      <value class="value" valueClass="string">Ms.</value>
+    </argument>
+    <argument id="FirstName">
+      <value class="value" valueClass="string">Deepanshi</value>
+    </argument>
+    <argument id="LastName">
+      <value class="value" valueClass="string">Garg</value>
+    </argument>
+    <argument id="Title">
+      <value class="value" valueClass="string">CEO</value>
+    </argument>
+    <argument id="AccountId"/>
+    <argument id="Phone">
+      <value class="value" valueClass="string">7451046311</value>
+    </argument>
+    <argument id="Email">
+      <value class="value" valueClass="string">deepanshi.garg@gmail.com</value>
+    </argument>
+  </args>
+</testCase>

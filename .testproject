@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject guid="2881822b-270e-404c-839e-cb0bfe1d3cd9" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
+  <title>/LearningProvar/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <testPlansPath>plans</testPlansPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment guid="5f849944-a4ad-4e2c-8200-d424cce14a62" name="QA">
+      <summary/>
+    </environment>
+    <environment guid="7e2bd5bc-5895-4e28-abbc-0f7e17f4d6f7" name="Prod">
+      <summary/>
+    </environment>
+  </environments>
+  <variables>
+    <testVariable name="provar_autoretry_timeout">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">30</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="provar_autoretry_override">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">ENABLE_ALL</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+  </variables>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection id="83a6bd34-fd07-439d-9943-784e3390844a" name="SalesforceConnection">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="aea79ec7-12ec-4fa2-b6a3-d0813d140210" url="sf:user=anubhav.gupta@sandbox.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+            <connectionUrl envId="5f849944-a4ad-4e2c-8200-d424cce14a62" envName="QA" secureStorageNodeId="56530ba2-5094-48f8-aa74-3cc438685998" url="sf:user=anubhav.gupta@sandbox.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="c7f544e2-84ff-4ffb-9f10-46373333f2e3" name="SalesforceLogOnConnection">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="sf:user=anubhav@sandbox.com;environment=PROD_DEV;logonAsConnection=SalesforceConnection;logonAsConnectionId=83a6bd34-fd07-439d-9943-784e3390844a;lightningMode=true"/>
+            <connectionUrl envId="7e2bd5bc-5895-4e28-abbc-0f7e17f4d6f7" envName="Prod" url="sf:user=anubhav@sandbox.com;environment=PROD_DEV;logonAsConnection=SalesforceConnection;logonAsConnectionId=83a6bd34-fd07-439d-9943-784e3390844a;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="google">
+      <connections>
+        <connection id="ba623438-27a9-49c9-9ad6-92c266d4e6f2" name="GmailConnection">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="81725de9-df3d-4f7c-a4a5-7cf51c526612" url="google:user=anubhavgp11@gmail.com;password={password};authenticationType=PASSWORD"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection id="f7f32445-af56-4bd1-82b6-4432a0da569e" name="UI_Connection">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="bbf76831-af97-424b-bc8e-b72cf535917f" url="se:baseUrl=https://crio-qkart-frontend-qa.vercel.app/"/>
+          </connectionUrls>
+        </connection>
+        <connection id="1b7d1db6-0244-439e-98fe-4faf7e61f08f" name="HTML_Tables">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="89b32407-ed94-4901-bc2a-1e55e43875e0" url="se:baseUrl=https://www.w3schools.com/html/html_tables.asp"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="database">
+      <connections>
+        <connection id="157e4664-8a76-4b25-a008-71b0ca5ee4d6" name="DB">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="653d69e7-23c4-4f4f-a3cb-40f3218d0b4f" url="jdbc:mysql://localhost:3306/world?schemaName=world&amp;user=root&amp;password={password}"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+  <browserConfigurations>
+    <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
+      <summary>Full screen with Test Builder adjustment</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1024" browserWidthType="Pixels" name="1024x768">
+      <summary>Fixed 1024x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="800" browserHeightType="Pixels" browserWidth="1280" browserWidthType="Pixels" name="1280x800">
+      <summary>Fixed 1280x800</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1366" browserWidthType="Pixels" name="1366x768">
+      <summary>Fixed 1366x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="1080" browserHeightType="Pixels" browserWidth="1920" browserWidthType="Pixels" name="1920x1080">
+      <summary>Fixed 1920x1080</summary>
+    </browserConfiguration>
+  </browserConfigurations>
+  <browserApplications>
+    <browserApplication connectionTypes="sf" name="Salesforce1">
+      <properties>
+        <browserPlatformProperty name="browserName" platform="IOS" type="DesiredCapability" value="Safari"/>
+        <browserPlatformProperty name="browserName" platform="ANDROID" type="DesiredCapability" value="Chrome"/>
+      </properties>
+    </browserApplication>
+    <browserApplication connectionTypes="sf" name="ServiceMax FSA">
+      <properties>
+        <browserPlatformProperty name="bundleId" platform="IOS" type="DesiredCapability" value="com.servicemaxinc.svmxfieldserviceapp"/>
+        <browserPlatformProperty name="app" platform="DESKTOP" type="DesiredCapability" value="C:\\Program Files\\ServiceMax\\ServiceMax Field Service\\Laptop Mobile.exe"/>
+      </properties>
+    </browserApplication>
+  </browserApplications>
+  <browserProviders>
+    <browserProvider name="Desktop" type="SeleniumLocal">
+      <devices>
+        <browserProviderDevice name="Full Screen">
+          <properties>
+            <browserPlatformProperty name="summary" value="Full screen with Test Builder adjustment"/>
+            <browserPlatformProperty name="browserHeightType" value="Full"/>
+            <browserPlatformProperty name="browserWidthType" value="Full"/>
+            <browserPlatformProperty name="adjustBrowserWidthForChromeIde" value="true"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1024x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1024x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1024"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1280x800">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1280x800"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="800"/>
+            <browserPlatformProperty name="browserWidth" value="1280"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1366x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1366x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1366"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1920x1080">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1920x1080"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="1080"/>
+            <browserPlatformProperty name="browserWidth" value="1920"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+    </browserProvider>
+    <browserProvider name="LambdaTestConnection" secureStorageNodeId="49d782ad-2687-4529-827f-d8ffd5c70ad9" type="LambdaTest">
+      <devices>
+        <browserProviderDevice name="WIN11 Chrome" platform="WIN11">
+          <properties>
+            <browserPlatformProperty name="browserName" type="DesiredCapability" value="Chrome"/>
+            <browserPlatformProperty name="other" type="DesiredCapability" value=""/>
+            <browserPlatformProperty name="resolution" type="DesiredCapability" value="1280x1024"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="MAC13_0 Safari" platform="MAC13_0">
+          <properties>
+            <browserPlatformProperty name="browserName" type="DesiredCapability" value="Safari"/>
+            <browserPlatformProperty name="other" type="DesiredCapability" value=""/>
+            <browserPlatformProperty name="resolution" type="DesiredCapability" value="1024x768"/>
+            <browserPlatformProperty name="--disable-notifications" type="DesiredCapability" value="true"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+      <properties>
+        <browserPlatformProperty name="username" value="anubhavgp11"/>
+      </properties>
+    </browserProvider>
+    <browserProvider name="BrowserStackConnection" secureStorageNodeId="9cae71d5-c4cf-45ac-b13e-2d4bfb5e3537" type="BrowserStackDesktop">
+      <devices>
+        <browserProviderDevice name="WIN10 chrome 128.0 beta" platform="WIN10">
+          <properties>
+            <browserPlatformProperty name="browserName" type="DesiredCapability" value="chrome"/>
+            <browserPlatformProperty name="version" type="DesiredCapability" value="128.0 beta"/>
+            <browserPlatformProperty name="resolution" type="DesiredCapability" value="1024x768"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="MAC10_14 safari" platform="MAC10_14">
+          <properties>
+            <browserPlatformProperty name="browserName" type="DesiredCapability" value="safari"/>
+            <browserPlatformProperty name="resolution" type="DesiredCapability" value="1024x768"/>
+            <browserPlatformProperty name="--disable-notifications" type="DesiredCapability" value="true"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+      <properties>
+        <browserPlatformProperty name="userName" value="anubhavgupta_m92c4s"/>
+      </properties>
+    </browserProvider>
+  </browserProviders>
+</testProject>

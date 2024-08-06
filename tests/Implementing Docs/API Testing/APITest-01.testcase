@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="77bdea34-90e9-4b2d-9f68-634e117efabb" id="8">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="23a3bfb0-f49b-4586-829d-d8452b52050a" name="ApexConnect" testItemId="1" title="Salesforce Connect: SalesforceConnection (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">83a6bd34-fd07-439d-9943-784e3390844a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">LightningSales</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="972b8c5c-9811-4add-9a93-47ed9302429c" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="3" title="Create Object: Account=&gt;AccountId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">AccountId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument argId="730cf5b1-e7bb-443a-8f92-8bb1dbd48280" id="Name">
+          <value class="variable">
+            <path element="Name"/>
+          </value>
+        </argument>
+        <argument argId="99b5c81f-1cfa-41db-a6d1-b4d4d37b9c6e" id="SLASerialNumber__c">
+          <value class="variable">
+            <path element="SLASerialNo"/>
+          </value>
+        </argument>
+        <argument argId="0349d7ee-7424-4add-875f-93bf1daf82cc" id="Rating">
+          <value class="variable">
+            <path element="Rating"/>
+          </value>
+        </argument>
+        <argument argId="d329d23d-457b-436b-b888-cde70046a54a" id="Phone">
+          <value class="variable">
+            <path element="Phone"/>
+          </value>
+        </argument>
+        <argument argId="69c81d74-bfa5-41ed-9251-351cc5d6fbd1" id="Type">
+          <value class="variable">
+            <path element="Type"/>
+          </value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument argId="f8b6f9f0-437a-4a88-b14f-e5d029d4a08f" id="Active__c">
+          <value class="variable">
+            <path element="Active"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Active__c" name="Active__c" title="Active__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLASerialNumber__c" name="SLASerialNumber__c" title="SLASerialNumber__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Rating" name="Rating" title="Rating"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Type" name="Type" title="Type"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexReadObject" guid="cabc0ec0-c8ad-4a62-8d54-50f130d267aa" name="ApexReadObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand" testItemId="4" title="Read Object: Account = {AccountId}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">AccountRead</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="SLASerialNumber__c">
+          <value class="value" valueClass="string">2657</value>
+        </argument>
+        <argument id="Active__c">
+          <value class="value" valueClass="string">Yes</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <resultAssertions>
+        <resultAssertion resultName="SLASerialNumber__c" title="Check SLASerialNumber__c">
+          <expected class="variable">
+            <path element="SLASerialNo"/>
+          </expected>
+        </resultAssertion>
+        <resultAssertion resultName="Active__c" title="Check Active__c">
+          <expected class="value" valueClass="string">Yes</expected>
+        </resultAssertion>
+      </resultAssertions>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLASerialNumber__c" name="SLASerialNumber__c" title="SLA Serial Number"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Active__c" name="Active__c" title="Active"/>
+      </generatedParameters>
+    </apiCall>
+    <caseCall guid="60bcf8a5-6205-4619-af67-46234ae5008e" testCaseId="672969fd-efdd-4e0d-aa88-25677e6f055d" testCasePath="tests/Implementing Docs/API Testing/CallableCreateNewContact.testcase" testItemId="5">
+      <arguments>
+        <argument id="Salutation">
+          <value class="value" valueClass="string">Ms.</value>
+        </argument>
+        <argument id="FirstName">
+          <value class="value" valueClass="string">Deepanshi</value>
+        </argument>
+        <argument id="LastName">
+          <value class="value" valueClass="string">Garg</value>
+        </argument>
+        <argument id="Title">
+          <value class="value" valueClass="string">CEO</value>
+        </argument>
+        <argument id="AccountId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="Phone">
+          <value class="value" valueClass="string">7451046311</value>
+        </argument>
+        <argument id="Email">
+          <value class="value" valueClass="string">deepanshi.garg@gmail.com</value>
+        </argument>
+      </arguments>
+    </caseCall>
+  </steps>
+  <params>
+    <param linkedToUrl="provar:hasvalue:730cf5b1-e7bb-443a-8f92-8bb1dbd48280" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" passwordVariableAllowed="true" title="Name">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:d329d23d-457b-436b-b888-cde70046a54a" modelBinding="sf:ui:binding:object?object=Account&amp;field=Phone" name="Phone" passwordVariableAllowed="true" title="Phone">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:f8b6f9f0-437a-4a88-b14f-e5d029d4a08f" modelBinding="sf:ui:binding:object?object=Account&amp;field=Active__c" name="Active" passwordVariableAllowed="true" title="Active">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:0349d7ee-7424-4add-875f-93bf1daf82cc" modelBinding="sf:ui:binding:object?object=Account&amp;field=Rating" name="Rating" passwordVariableAllowed="true" title="Rating">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:99b5c81f-1cfa-41db-a6d1-b4d4d37b9c6e" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLASerialNumber__c" name="SLASerialNo" passwordVariableAllowed="true" title="SLA_SerialNo">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:69c81d74-bfa5-41ed-9251-351cc5d6fbd1" modelBinding="sf:ui:binding:object?object=Account&amp;field=Type" name="Type" passwordVariableAllowed="true" title="Type">
+      <summary/>
+    </param>
+  </params>
+  <args>
+    <argument id="Name">
+      <value class="value" valueClass="string">A &amp; D Company</value>
+    </argument>
+    <argument id="Phone">
+      <value class="value" valueClass="string">7078466107</value>
+    </argument>
+    <argument id="Active">
+      <value class="value" valueClass="string">Yes</value>
+    </argument>
+    <argument id="Rating">
+      <value class="value" valueClass="string">Warm</value>
+    </argument>
+    <argument id="SLASerialNo">
+      <value class="funcCall" id="UniqueId">
+        <argument id="length">
+          <value class="value" valueClass="decimal">5</value>
+        </argument>
+      </value>
+    </argument>
+    <argument id="Type">
+      <value class="value" valueClass="string">Prospect</value>
+    </argument>
+  </args>
+</testCase>

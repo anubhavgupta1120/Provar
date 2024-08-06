@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="43b7d6a1-2b27-4f14-adde-484db663c974" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="5c55947b-e5e2-4580-9e4b-0c30851e1813" name="ApexConnect" testItemId="1" title="Salesforce Connect: SalesforceConnection (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">83a6bd34-fd07-439d-9943-784e3390844a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="8dfe941e-9699-4e23-8428-f4ecf91a30d3" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Case=&gt;CaseId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Case</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">CaseId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument argId="5d297446-2b9b-406a-9931-206a83d71721" id="Status">
+          <value class="variable">
+            <path element="Status"/>
+          </value>
+        </argument>
+        <argument argId="8adfcc78-2eed-4d99-a050-e0e4097875a4" id="Origin">
+          <value class="variable">
+            <path element="Origin"/>
+          </value>
+        </argument>
+        <argument argId="ba691e0d-d1f9-4485-a61a-4d8a02cfd8e7" id="Priority">
+          <value class="variable">
+            <path element="Priority"/>
+          </value>
+        </argument>
+        <argument argId="d7a44499-7c64-4013-a82d-397f33db8e98" id="Subject">
+          <value class="variable">
+            <path element="Subject"/>
+          </value>
+        </argument>
+        <argument argId="33cc36be-1771-4b3b-a388-1ccdea82469e" id="AccountId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument argId="635da74a-a060-48e1-baa2-536a0f3c3e77" id="BusinessHoursId">
+          <value class="variable">
+            <path element="BusinessHoursId"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Case</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Case&amp;field=BusinessHoursId" name="BusinessHoursId" title="BusinessHoursId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Case&amp;field=Status" name="Status" title="Status"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Case&amp;field=Origin" name="Origin" title="Origin"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Case&amp;field=Priority" name="Priority" title="Priority"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Case&amp;field=Subject" name="Subject" title="Subject"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Case&amp;field=AccountId" name="AccountId" title="AccountId"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexUpdateObject" guid="4cd5bbf9-8e71-46ce-a8e4-65dcd30e712f" name="ApexUpdateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand" testItemId="3" title="Update Object: Account = {AccountId}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="AccountId"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">AccountUpdated</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="Active__c">
+          <value class="value" valueClass="string">Yes</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.UpdateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Active__c" name="Active__c" title="Active__c"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+  <params>
+    <param linkedToUrl="provar:hasvalue:5d297446-2b9b-406a-9931-206a83d71721" modelBinding="sf:ui:binding:object?object=Case&amp;field=Status" name="Status" passwordVariableAllowed="true" title="Status">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:8adfcc78-2eed-4d99-a050-e0e4097875a4" modelBinding="sf:ui:binding:object?object=Case&amp;field=Origin" name="Origin" passwordVariableAllowed="true" title="Origin">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:ba691e0d-d1f9-4485-a61a-4d8a02cfd8e7" modelBinding="sf:ui:binding:object?object=Case&amp;field=Priority" name="Priority" passwordVariableAllowed="true" title="Priority">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:d7a44499-7c64-4013-a82d-397f33db8e98" modelBinding="sf:ui:binding:object?object=Case&amp;field=Subject" name="Subject" passwordVariableAllowed="true" title="Subject">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:33cc36be-1771-4b3b-a388-1ccdea82469e" modelBinding="sf:ui:binding:object?object=Case&amp;field=AccountId" name="AccountId" passwordVariableAllowed="true" title="AccountId">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:635da74a-a060-48e1-baa2-536a0f3c3e77" modelBinding="sf:ui:binding:object?object=Case&amp;field=BusinessHoursId" name="BusinessHoursId" passwordVariableAllowed="true" title="BusinessHoursId">
+      <summary/>
+    </param>
+  </params>
+  <args>
+    <argument id="Status">
+      <value class="value" valueClass="string">New</value>
+    </argument>
+    <argument id="Origin">
+      <value class="value" valueClass="string">Phone</value>
+    </argument>
+    <argument id="Priority">
+      <value class="value" valueClass="string">Medium</value>
+    </argument>
+    <argument id="Subject">
+      <value class="value" valueClass="string">New Customer Courtesy Call</value>
+    </argument>
+    <argument id="AccountId">
+      <value class="value" valueClass="string">001dL00000GvFlzQAF</value>
+    </argument>
+    <argument id="BusinessHoursId">
+      <value class="value" valueClass="string">01mdL000003O08P</value>
+    </argument>
+  </args>
+</testCase>

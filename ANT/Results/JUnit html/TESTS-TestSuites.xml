@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="0" hostname="ibm-anubhavgupta" id="0" name="LearningProvar/tests" package="" skipped="0" tests="1" time="221.398" timestamp="Wed Jul 03 16:20:46 IST 2024">
+	    <properties>
+		      <property name="excludeCallableTestCases" value="true" />
+
+		      <property name="testEnvironment" value="" />
+
+		      <property name="pluginOutputLevel" value="WARNING" />
+
+		      <property name="projectPath" value=".." />
+
+		      <property name="salesforceMetadataCache" value="Reuse" />
+
+		      <property name="resultsPathDisposition" value="Increment" />
+
+		      <property name="testOutputLevel" value="INFO" />
+
+		      <property name="webBrowserType" value="Chrome" />
+
+		      <property name="resultsPath" value="../ANT/Results" />
+
+		      <property name="webBrowserConfiguration" value="Full Screen" />
+
+		      <property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace\LearningProvar\ANT\..\..\.provarCaches" />
+
+	    </properties>
+
+	    <testcase classname="tests/DTest-1.testcase" name="DTest-1.testcase" time="216.368">
+	</testcase>
+
+  </testsuite>
+</testsuites>

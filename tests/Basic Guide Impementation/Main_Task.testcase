@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="5d95c1fc-5fc0-4a18-8d32-4232f88e5675" id="4">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="6a1978e1-6e3f-4c39-92aa-0391bfda864d" name="ApexConnect" testItemId="1" title="Salesforce Connect: SalesforceConnection (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">83a6bd34-fd07-439d-9943-784e3390844a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">LightningSales</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument argId="b31bc37e-7665-4298-95b5-9501d5ab6ed2" id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.messaging.SendMessage" guid="4389626d-ddb1-43e2-b2f0-53b5bf0c6ef4" name="SendMessage" testItemId="34" title="Send Message: GmailConnection">
+      <arguments>
+        <argument id="destinationConnectionName">
+          <value class="value" valueClass="string">GmailConnection</value>
+        </argument>
+        <argument id="body">
+          <value class="value" valueClass="string">Demo</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">ba623438-27a9-49c9-9ad6-92c266d4e6f2</value>
+        </argument>
+        <argument id="payloadFormat">
+          <value class="value" valueClass="string">Auto</value>
+        </argument>
+        <argument id="attachments">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="to">
+          <value class="value" valueClass="string">cu_prospectivestudentemailservice@7-1r2t4u5ftz06yu9rijc6lcm1vof65gc0nm9gx8dg9jfq9ueuwc.5r-4ysfeae.cs160.apex.sandbox.salesforce.com</value>
+        </argument>
+        <argument id="cc"/>
+        <argument id="bcc"/>
+        <argument id="subject">
+          <value class="value" valueClass="string">Demo_Debug</value>
+        </argument>
+        <argument id="signature"/>
+      </arguments>
+      <generatedParameters>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" mandatory="true" name="to" title="To">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="cc" title="CC">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="bcc" title="BCC">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="subject" title="Subject">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="signature" title="Signature">
+          <type>
+            <textType/>
+          </type>
+        </param>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="32f828c1-32ed-43cb-bad2-337e8b368476" name="StepGroup" testItemId="7" title="Read Excel">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Read Excel</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData" variableScope="Test">
+          <cacheToken>C:/Users/anubhav.gupta/Provar/Workspace/LearningProvar/templates/DATA.xlsx;1721390375013</cacheToken>
+          <cachedParameters>
+            <apiParam name="Name"/>
+            <apiParam name="Rating"/>
+            <apiParam name="Phone"/>
+            <apiParam name="SLA_SerialNo"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">templates/DATA.xlsx</workbookPath>
+            <worksheetName class="value"/>
+            <valuesRange class="value"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="hidden" testItemId="8">
+          <steps/>
+        </clause>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" guid="141e1943-b2e7-4c13-9944-75021063f259" name="ApexSoqlQuery" testItemId="30" title="SOQL Query: select Name from Account=&gt;AccountRows">
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="value" valueClass="string">select Name from Account</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">AccountRows</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="fe9c90fc-d0ba-4fff-82c8-f97f29886f6d" name="SetValues" testItemId="31" title="Set Values: AccountNames">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">AccountNames</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="funcCall" id="Count">
+                  <argument id="value">
+                    <value class="variable">
+                      <path element="AccountRows"/>
+                    </value>
+                  </argument>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.list.ListCompare" guid="c68e0436-d284-4f7f-86f3-b64c749693e6" name="ListCompare" testItemId="33" title="Compare: {AccountRows}=&gt;{AccountRows}">
+      <arguments>
+        <argument id="list1">
+          <value class="variable">
+            <path element="AccountRows"/>
+          </value>
+        </argument>
+        <argument id="list2">
+          <value class="variable">
+            <path element="AccountRows"/>
+          </value>
+        </argument>
+        <argument id="matchColumns">
+          <value class="variable">
+            <path element="AccountRows"/>
+            <path element="Name"/>
+          </value>
+        </argument>
+        <argument id="compareColumns"/>
+        <argument id="ignoreColumns"/>
+        <argument id="differenceHandling">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="unmatched1Handling">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="unmatched2Handling">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="caseInsensitive">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="8a750e20-dc8e-4315-bdec-9b8960ca853e" name="ForEach" testItemId="12" title="For Each: {SourceData}=&gt;Row">
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="SourceData"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">Row</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="13">
+          <steps>
+            <caseCall guid="f1f0649b-d7ac-4b82-bf82-623f21a11b65" testCaseId="74aeb829-3933-408f-b794-5ae61111f297" testCasePath="tests/Basic Guide Impementation/CallableAccountCreation.testcase" testItemId="2">
+              <arguments>
+                <argument id="Name">
+                  <value class="variable">
+                    <path element="Row"/>
+                    <path element="Name"/>
+                  </value>
+                </argument>
+                <argument id="Rating">
+                  <value class="variable">
+                    <path element="Row"/>
+                    <path element="Rating"/>
+                  </value>
+                </argument>
+                <argument id="Phone">
+                  <value class="variable">
+                    <path element="Row"/>
+                    <path element="Phone"/>
+                  </value>
+                </argument>
+                <argument id="SLAserialNo">
+                  <value class="variable">
+                    <path element="Row"/>
+                    <path element="SLA_SerialNo"/>
+                  </value>
+                </argument>
+                <argument id="reuseConnectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+                <argument id="Override_Connection"/>
+                <argument id="connectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+              </arguments>
+              <outputArguments>
+                <outputArgument id="AccountId">
+                  <name class="value" valueClass="string">AccountId</name>
+                </outputArgument>
+                <outputArgument id="SalesforceConnection">
+                  <name class="value" valueClass="string">SalesforceConnection</name>
+                </outputArgument>
+              </outputArguments>
+            </caseCall>
+            <caseCall guid="a68988b3-bb18-4a22-9aa9-90001b0f224e" testCaseId="84878ab0-ca6b-409a-a20d-df2a85660cd3" testCasePath="tests/Basic Guide Impementation/CallableCreateContact.testcase" testItemId="3">
+              <arguments>
+                <argument id="FirstName">
+                  <value class="value" valueClass="string">Om</value>
+                </argument>
+                <argument id="LastName">
+                  <value class="value" valueClass="string">Gupta</value>
+                </argument>
+                <argument id="Email">
+                  <value class="variable">
+                    <path element="Row"/>
+                    <path element="Email"/>
+                  </value>
+                </argument>
+                <argument id="Phone">
+                  <value class="variable">
+                    <path element="Row"/>
+                    <path element="Phone"/>
+                  </value>
+                </argument>
+                <argument id="Salutation">
+                  <value class="value" valueClass="string">Mr.</value>
+                </argument>
+                <argument id="AccountId">
+                  <value class="variable">
+                    <path element="AccountId"/>
+                  </value>
+                </argument>
+                <argument id="reuseConnectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+                <argument id="Override_Connection">
+                  <value class="variable">
+                    <path element="SalesforceConnection"/>
+                  </value>
+                </argument>
+                <argument id="connectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+              </arguments>
+              <outputArguments>
+                <outputArgument id="ContactId">
+                  <name class="value" valueClass="string">ContactId</name>
+                </outputArgument>
+              </outputArguments>
+            </caseCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexReadObject" guid="79bd317a-be35-4914-a9a8-39174caac597" name="ApexReadObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand" testItemId="4" title="Read Object: Contact = {ContactId}">
+              <arguments>
+                <argument id="objectType">
+                  <value class="value" valueClass="string">Contact</value>
+                </argument>
+                <argument id="resultName">
+                  <value class="value" valueClass="string">ContactRead</value>
+                </argument>
+                <argument id="objectId">
+                  <value class="variable">
+                    <path element="ContactId"/>
+                  </value>
+                </argument>
+                <argument id="apexConnectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+                <argument id="Email">
+                  <value class="value" valueClass="string">rose@edge.com</value>
+                </argument>
+                <argument id="AccountId">
+                  <value class="value" valueClass="string">001dL00000GvFluQAF</value>
+                </argument>
+                <argument id="Phone">
+                  <value class="value" valueClass="string">(512) 757-6000</value>
+                </argument>
+                <argument id="resultScope">
+                  <value class="value" valueClass="string">Test</value>
+                </argument>
+              </arguments>
+              <resultAssertions>
+                <resultAssertion resultName="Email" title="Check Email">
+                  <expected class="variable">
+                    <path element="ContactRead"/>
+                    <path element="Email"/>
+                  </expected>
+                </resultAssertion>
+                <resultAssertion resultName="AccountId" title="Check AccountId">
+                  <expected class="variable">
+                    <path element="ContactRead"/>
+                    <path element="AccountId"/>
+                  </expected>
+                </resultAssertion>
+                <resultAssertion resultName="Phone" title="Check Phone">
+                  <expected class="variable">
+                    <path element="ContactRead"/>
+                    <path element="Phone"/>
+                  </expected>
+                </resultAssertion>
+              </resultAssertions>
+              <parameterGeneratorProperties>
+                <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.ConnectionName">SalesforceConnection</propertyValue>
+                <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+              </parameterGeneratorProperties>
+              <generatedParameters>
+                <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" title="Email"/>
+                <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=AccountId" name="AccountId" title="Account Name"/>
+                <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" title="Phone"/>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="a77d18cb-4e74-4fd4-bc5b-e6a6f53eadb4" name="SetValues" testItemId="27" title="Set Values: Var.SLA_SerialNo">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">Var.AccountID</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="AccountId"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">Var.ContactID</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="ContactId"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">Var.SLA_SerialNo</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="Row"/>
+                          <path element="SLA_SerialNo"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+              <parameterValueSources/>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" guid="bd4596d5-69d1-4a91-bfb3-22281950f17e" name="Write" testItemId="28" title="Write: {Var}=&gt;templates/DATA.xlsx">
+              <arguments>
+                <argument id="data">
+                  <value class="variable">
+                    <path element="Var"/>
+                  </value>
+                </argument>
+                <argument id="dataUrl">
+                  <value class="excelTarget" sheetWriteMode="Update">
+                    <workbookPath class="value" valueClass="string">templates/DATA.xlsx</workbookPath>
+                    <worksheetName class="value" valueClass="string">Day-01</worksheetName>
+                  </value>
+                </argument>
+                <argument id="targetDescription">
+                  <value class="value" valueClass="string">templates/DATA.xlsx</value>
+                </argument>
+                <argument id="updateValueRange"/>
+                <argument id="updateColumnNames">
+                  <value class="value" valueClass="string">FirstRowOfRange</value>
+                </argument>
+                <argument id="updateMatchType">
+                  <value class="value" valueClass="string">MatchColumns</value>
+                </argument>
+                <argument id="updateMatchLocator">
+                  <value class="value" valueClass="string">SLA_SerialNo</value>
+                </argument>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="result" name="updateValueRange" title="Values Range">
+                  <summary>The range of cells that needs to updated. If nothing is specified entire sheet is targeted</summary>
+                  <type>
+                    <textType>
+                      <constraints>
+                        <valueConstraint name="disableTemplateEditor">true</valueConstraint>
+                      </constraints>
+                    </textType>
+                  </type>
+                </apiParam>
+                <apiParam group="result" name="updateColumnNames" title="Column Names">
+                  <summary>Identifies where the column names are in the spreadsheet:</summary>
+                  <defaultValue>FirstRowOfRange</defaultValue>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="boundedValues">FirstRowOfRange:Across the first row|FirstColumnOfRange:Down the first column</valueConstraint>
+                      </constraints>
+                    </choiceType>
+                  </type>
+                </apiParam>
+                <apiParam group="result" internal="true" name="updateMatchType" title="">
+                  <summary/>
+                  <defaultValue>RowOrColNumber</defaultValue>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="boundedValues">RowOrColNumber:Match by Position|Where:Match on Condition|MatchColumns:Match by Columns</valueConstraint>
+                      </constraints>
+                    </choiceType>
+                  </type>
+                </apiParam>
+                <apiParam group="result" manuallyResolved="true" name="updateMatchLocator" title="Match Locator">
+                  <summary>Identifies which rows in the Range will be updated. \n It can either be a row number (where the first row = 1) or a filtering condition against one or more columns (e.g. {firstName = "Joe" and surname = "Bloggs"}.</summary>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexDeleteObject" guid="59e60550-2732-41c8-8598-e522a98cbd7a" name="ApexDeleteObject" testItemId="18" title="Delete Object: {ContactId}">
+              <arguments>
+                <argument id="objectId">
+                  <value class="variable">
+                    <path element="ContactId"/>
+                  </value>
+                </argument>
+                <argument id="apexConnectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexDeleteObject" guid="037e3cde-ffe7-4d82-8728-995e743b7262" name="ApexDeleteObject" testItemId="21" title="Delete Object: {AccountId}">
+              <arguments>
+                <argument id="objectId">
+                  <value class="variable">
+                    <path element="AccountId"/>
+                  </value>
+                </argument>
+                <argument id="apexConnectionName">
+                  <value class="value" valueClass="string">SalesforceConnection</value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+  <params/>
+  <args/>
+</testCase>
