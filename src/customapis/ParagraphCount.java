@@ -3,7 +3,6 @@ package customapis;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -20,18 +19,18 @@ import com.provar.core.testapi.annotations.TestApiParameterGroups;
 import com.provar.core.testapi.annotations.TestExecutionContext;
 import com.provar.core.testapi.annotations.TestLogger;
 
-@TestApi(title = "Read Paragraphs", summary = "", remarks = "", iconBase = "", defaultApiGroups = { "Custom" })
+@TestApi(title = "Paragraph Count", summary = "", remarks = "", iconBase = "", defaultApiGroups = { "Custom" })
 @TestApiParameterGroups(parameterGroups = { @TestApiParameterGroup(groupName = "inputs", title = "Inputs"),
 		@TestApiParameterGroup(groupName = "result", title = "Result"), })
-public class ReadWordFileParagraphs {
+public class ParagraphCount {
 
-	@TestApiParameter(seq = 1, summary = "The file path which you want to read", remarks = "", mandatory = true, parameterGroup = "inputs")
-	public String filePath;
+	@TestApiParameter(seq = 1, summary = "", remarks = "", mandatory = true, parameterGroup = "inputs")
+	public String path;
 
-	@TestApiParameter(seq = 2, summary = "The name that the result will be stored under.", remarks = "", mandatory = true, parameterGroup = "result")
+	@TestApiParameter(seq = 10, summary = "The name that the result will be stored under.", remarks = "", mandatory = true, parameterGroup = "result")
 	public String resultName;
 
-	@TestApiParameter(seq = 3, summary = "The lifespan of the result.", remarks = "", mandatory = true, parameterGroup = "result", defaultValue = "Test")
+	@TestApiParameter(seq = 11, summary = "The lifespan of the result.", remarks = "", mandatory = true, parameterGroup = "result", defaultValue = "Test")
 	public ValueScope resultScope;
 
 	/**
@@ -47,16 +46,16 @@ public class ReadWordFileParagraphs {
 	public ITestExecutionContext testExecutionContext;
 
 	@TestApiExecutor
-	public void getListOfParagraph() throws IOException {
-		List<String> resultList = new ArrayList<String>();
+	public void execute() throws IOException {
+
 		List<XWPFParagraph> paragraphList;
-		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(filePath)))) {
+		int count;
+		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(path)))) {
 			paragraphList = doc.getParagraphs();
-			for (XWPFParagraph paragraph : paragraphList) {
-				resultList.add(paragraph.getText());
-			}
+			count = paragraphList.size();
 		}
-		testExecutionContext.setValue(resultName, resultList, resultScope);
+
+		testExecutionContext.setValue(resultName, count, resultScope);
 
 	}
 

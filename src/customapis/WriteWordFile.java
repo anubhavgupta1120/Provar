@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.logging.Logger;
 
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
@@ -42,6 +43,18 @@ public class WriteWordFile {
 	@TestApiParameter(seq = 5, summary = "Enter the text you want in your word file", remarks = "", mandatory = true, parameterGroup = "inputs")
 	public String text;
 
+	@TestApiParameter(seq = 6, summary = "", remarks = "", mandatory = false, parameterGroup = "inputs")
+	public int paragraphNumber;
+
+	@TestApiParameter(seq = 7, summary = "", remarks = "", mandatory = false, parameterGroup = "inputs")
+	public boolean newParagraph;
+
+	@TestApiParameter(seq = 8, summary = "", remarks = "", mandatory = true, parameterGroup = "inputs")
+	public String fontName;
+
+	@TestApiParameter(seq = 9, summary = "", remarks = "", mandatory = true, parameterGroup = "inputs")
+	public String paragraphAlignment;
+
 	@TestApiParameter(seq = 10, summary = "The name that the result will be stored under.", remarks = "", mandatory = true, parameterGroup = "result")
 	public String resultName;
 
@@ -63,21 +76,33 @@ public class WriteWordFile {
 	@TestApiExecutor
 	public void execute() throws FileNotFoundException, IOException {
 		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(filePath)))) {
+			if (newParagraph) {
+				XWPFParagraph paragraph = doc.createParagraph();
+				if (paragraphAlignment.equalsIgnoreCase("left")) {
+					paragraph.setAlignment(ParagraphAlignment.LEFT);
+				}
+				if (paragraphAlignment.equalsIgnoreCase("center")) {
+					paragraph.setAlignment(ParagraphAlignment.CENTER);
+				}
+				if (paragraphAlignment.equalsIgnoreCase("right")) {
+					paragraph.setAlignment(ParagraphAlignment.RIGHT);
+				}
+				XWPFRun run_new = paragraph.createRun();
+				run_new.setBold(setBold);
+				run_new.setItalic(setItalic);
+				run_new.setFontSize(fontSize);
+				run_new.setFontFamily(fontName);
+				run_new.setText(text);
+			} else {
 
-			// create a paragraph
-			XWPFParagraph paragraph = doc.createParagraph();
-
-			// Setting Alignment
-			paragraph.setAlignment(ParagraphAlignment.LEFT);
-
-			// set font
-			XWPFRun run = paragraph.createRun();
-			run.setBold(setBold);
-			run.setItalic(setItalic);
-			run.setFontSize(fontSize);
-			run.setFontFamily("New Roman");
-			run.setText(text);
-
+				List<XWPFParagraph> paragraphList = doc.getParagraphs();
+				XWPFRun run = paragraphList.get(paragraphNumber - 1).createRun();
+				run.setBold(setBold);
+				run.setItalic(setItalic);
+				run.setFontSize(fontSize);
+				run.setFontFamily(fontName);
+				run.setText(" " + text);
+			}
 			// save the docs
 			try (FileOutputStream out = new FileOutputStream(filePath)) {
 				doc.write(out);

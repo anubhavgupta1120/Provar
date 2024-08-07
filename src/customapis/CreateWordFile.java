@@ -41,6 +41,12 @@ public class CreateWordFile {
 	@TestApiParameter(seq = 5, summary = "Enter the text you want in your word file", remarks = "", mandatory = true, parameterGroup = "inputs")
 	public String text;
 
+	@TestApiParameter(seq = 6, summary = "", remarks = "", mandatory = true, parameterGroup = "inputs")
+	public String fontName;
+
+	@TestApiParameter(seq = 7, summary = "", remarks = "", mandatory = true, parameterGroup = "inputs")
+	public String paragraphAlignment;
+
 	@TestApiParameter(seq = 10, summary = "The name that the result will be stored under.", remarks = "", mandatory = true, parameterGroup = "result")
 	public String resultName;
 
@@ -62,21 +68,30 @@ public class CreateWordFile {
 	@TestApiExecutor
 	public void createWordFile() throws FileNotFoundException, IOException {
 		String fileName = filePath;
+		XWPFParagraph paragraph;
 
 		try (XWPFDocument doc = new XWPFDocument()) {
 
 			// create a paragraph
-			XWPFParagraph paragraph = doc.createParagraph();
+			paragraph = doc.createParagraph();
 
 			// Setting Alignment
-			paragraph.setAlignment(ParagraphAlignment.LEFT);
+			if (paragraphAlignment.equalsIgnoreCase("left")) {
+				paragraph.setAlignment(ParagraphAlignment.LEFT);
+			}
+			if (paragraphAlignment.equalsIgnoreCase("center")) {
+				paragraph.setAlignment(ParagraphAlignment.CENTER);
+			}
+			if (paragraphAlignment.equalsIgnoreCase("right")) {
+				paragraph.setAlignment(ParagraphAlignment.RIGHT);
+			}
 
 			// set font
 			XWPFRun run = paragraph.createRun();
 			run.setBold(setBold);
 			run.setItalic(setItalic);
 			run.setFontSize(fontSize);
-			run.setFontFamily("New Roman");
+			run.setFontFamily(fontName);
 			run.setText(text);
 
 			// Create new File
