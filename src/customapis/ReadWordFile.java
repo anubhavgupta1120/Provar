@@ -48,7 +48,9 @@ public class ReadWordFile {
 
 	public String readWordFile() throws IOException {
 		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(filePath)))) {
-			return new XWPFWordExtractor(doc).getText();
+			
+			String res = new XWPFWordExtractor(doc).getText();
+			return res;
 		}
 	}
 

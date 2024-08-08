@@ -76,7 +76,8 @@ public class WriteWordFile {
 	@TestApiExecutor
 	public void execute() throws FileNotFoundException, IOException {
 		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(filePath)))) {
-			if (newParagraph) {
+			List<XWPFParagraph> paragraphList = doc.getParagraphs();
+			if (newParagraph || paragraphNumber > paragraphList.size()) {
 				XWPFParagraph paragraph = doc.createParagraph();
 				if (paragraphAlignment.equalsIgnoreCase("left")) {
 					paragraph.setAlignment(ParagraphAlignment.LEFT);
@@ -95,7 +96,6 @@ public class WriteWordFile {
 				run_new.setText(text);
 			} else {
 
-				List<XWPFParagraph> paragraphList = doc.getParagraphs();
 				XWPFRun run = paragraphList.get(paragraphNumber - 1).createRun();
 				run.setBold(setBold);
 				run.setItalic(setItalic);

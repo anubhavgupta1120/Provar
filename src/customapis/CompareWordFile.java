@@ -67,6 +67,7 @@ public class CompareWordFile {
 
 	}
 
+
 	public String readWordFile1() throws IOException {
 		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(File1)))) {
 			return new XWPFWordExtractor(doc).getText();
@@ -82,6 +83,7 @@ public class CompareWordFile {
 		return resultList;
 	}
 
+	
 	public String readWordFile2() throws IOException {
 		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(File2)))) {
 			return new XWPFWordExtractor(doc).getText();
