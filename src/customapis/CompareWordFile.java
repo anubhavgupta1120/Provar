@@ -19,10 +19,10 @@ import com.provar.core.testapi.annotations.TestApiParameterGroups;
 import com.provar.core.testapi.annotations.TestExecutionContext;
 import com.provar.core.testapi.annotations.TestLogger;
 
-@TestApi(title = "Assert Word File", summary = "", remarks = "", iconBase = "", defaultApiGroups = { "Custom" })
+@TestApi(title = "Compare Word File", summary = "", remarks = "", iconBase = "", defaultApiGroups = { "Custom" })
 @TestApiParameterGroups(parameterGroups = { @TestApiParameterGroup(groupName = "inputs", title = "Inputs"),
 		@TestApiParameterGroup(groupName = "result", title = "Result"), })
-public class AssertWordFile {
+public class CompareWordFile {
 
 	@TestApiParameter(seq = 1, summary = "The first parameter's summary.", remarks = "", mandatory = true, parameterGroup = "inputs")
 	public String File1;
