@@ -1,3 +1,0 @@
-run id, started, ended, path, name, successful, skipped, failed, total, failure Message
-2,2024-08-08 19:34:41.594,2024-08-08 19:34:47.762,C:\Users\anubhav.gupta\Provar\Workspace\LearningProvar\tests\UOP Course,WordFile.testcase,1,0,0,,
-Summary,2024-08-08 19:34:41.594,2024-08-08 19:34:47.874,,,1,0,0,1
