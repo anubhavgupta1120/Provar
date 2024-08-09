@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.apache.poi.xwpf.extractor.*;
-import org.apache.poi.xwpf.usermodel.*;
+import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
 import com.provar.core.model.base.api.ValueScope;
 import com.provar.core.testapi.ITestExecutionContext;
@@ -48,7 +48,7 @@ public class ReadWordFile {
 
 	public String readWordFile() throws IOException {
 		try (XWPFDocument doc = new XWPFDocument(Files.newInputStream(Paths.get(filePath)))) {
-			
+
 			String res = new XWPFWordExtractor(doc).getText();
 			return res;
 		}
