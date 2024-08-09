@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
-
 import org.apache.poi.xwpf.extractor.*;
 import org.apache.poi.xwpf.usermodel.*;
 
