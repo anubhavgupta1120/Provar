@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.extractor.*;
+import org.apache.poi.xwpf.usermodel.*;
 
 import com.provar.core.model.base.api.ValueScope;
 import com.provar.core.testapi.ITestExecutionContext;
