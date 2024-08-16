@@ -122,6 +122,41 @@
         </argument>
       </arguments>
     </apiCall>
+    <apiCall apiId="customapis.WriteWordFile" guid="9fc0fe66-f934-4fce-828d-2ef81476dd5a" name="WriteWordFile" testItemId="12" title="Write Word File: ⇒ Path">
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="setBold"/>
+        <argument id="setItalic">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="fontSize">
+          <value class="value" valueClass="decimal">24</value>
+        </argument>
+        <argument id="text">
+          <value class="value" valueClass="string">My name is Anurag</value>
+        </argument>
+        <argument id="paragraphNumber"/>
+        <argument id="newParagraph">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="fontName">
+          <value class="value" valueClass="string">New Roman</value>
+        </argument>
+        <argument id="paragraphAlignment">
+          <value class="value" valueClass="string">right</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Path</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
     <apiCall apiId="customapis.ReadWordFileParagraphs" guid="29fd9cd5-0d3a-417f-8bce-16cc3ab0819d" name="ReadWordFileParagraphs" testItemId="6" title="Read Paragraphs: ⇒ ReadParagraph">
       <tags/>
       <arguments>
