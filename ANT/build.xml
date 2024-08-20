@@ -18,8 +18,8 @@
 		<Run-Test-Case provarHome="${provar.home}" 
 				projectPath="${testproject.home}" 
 				resultsPath="${testproject.results}" 
-				resultsPathDisposition="Increment" 
-				testEnvironment="QA" 
+				resultsPathDisposition="Replace" 
+				testEnvironment="" 
 				webBrowser="Chrome" 
 				webBrowserConfiguration="Full Screen"
 				webBrowserProviderName="Desktop"
@@ -27,7 +27,7 @@
 				excludeCallableTestCases="true" 
 				salesforceMetadataCache="Reuse" 
 				projectCachePath="../../.provarCaches"
-				testOutputlevel="BASIC" 
+				testOutputlevel="DIAGNOSTIC" 
 				pluginOutputlevel="WARNING"
 				stopTestRunOnError="false"
 				secretsPassword="${secrets.password}"
@@ -36,7 +36,7 @@
 				invokeTestRunMonitor="true"
 				>
 		
-			<fileset id="testcases" dir="../tests/UOP Course"><include name="WordFile.testcase"/></fileset>
+			<fileset dir="../tests/UOP Course"><include name="WordFile.testcase"/></fileset>
 			<emailProperties sendEmail="false" primaryRecipients="" ccRecipients="" bccRecipients="" emailSubject="Provar test run report" attachExecutionReport="false" attachZip="false"/>
 		</Run-Test-Case>
 
