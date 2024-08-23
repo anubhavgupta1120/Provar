@@ -18,7 +18,7 @@
 		<Run-Test-Case provarHome="${provar.home}" 
 				projectPath="${testproject.home}" 
 				resultsPath="${testproject.results}" 
-				resultsPathDisposition="Increment" 
+				resultsPathDisposition="Replace" 
 				testEnvironment="" 
 				webBrowser="Chrome" 
 				webBrowserConfiguration="Full Screen"
@@ -36,7 +36,7 @@
 				invokeTestRunMonitor="true"
 				>
 		
-			<fileset dir="../tests/UOP Course"><include name="WordFile.testcase"/></fileset>
+			<fileset id="testcases" dir="../tests/UOP Course"><include name="WordFile.testcase"/></fileset>
 			<emailProperties sendEmail="false" primaryRecipients="" ccRecipients="" bccRecipients="" emailSubject="Provar test run report" attachExecutionReport="false" attachZip="false"/>
 		</Run-Test-Case>
 

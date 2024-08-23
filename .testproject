@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testProject guid="2881822b-270e-404c-839e-cb0bfe1d3cd9" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop" selectedWebBrowserType="Chrome_Headless">
+<testProject guid="2881822b-270e-404c-839e-cb0bfe1d3cd9" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
   <title>/LearningProvar/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
