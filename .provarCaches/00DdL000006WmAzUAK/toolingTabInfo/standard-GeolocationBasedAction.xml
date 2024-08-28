@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="GeolocationBasedAction" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Geolocation Based Actions" Name="standard-GeolocationBasedAction" SobjectName="GeolocationBasedAction" Url="https://provartesting-dev-ed.develop.my.salesforce.com/16Q/o"/>
+</toolingTabInfo>

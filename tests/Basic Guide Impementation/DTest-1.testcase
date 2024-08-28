@@ -33,7 +33,9 @@
         <argument id="enableObjectIdLogging">
           <value class="value" valueClass="boolean">true</value>
         </argument>
-        <argument id="autoCleanup"/>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
         <argument id="cleanupConnectionName"/>
         <argument id="logFileLocation"/>
         <argument id="username"/>
@@ -66,7 +68,9 @@
         <argument id="windowSize">
           <value class="value" valueClass="string">Default</value>
         </argument>
-        <argument id="closeWindow"/>
+        <argument id="closeWindow">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
         <argument id="captureBefore">
           <value class="value" valueClass="string">false</value>
         </argument>

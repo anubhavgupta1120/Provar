@@ -1,3 +1,4 @@
 run id, started, ended, path, name, successful, skipped, failed, total, failure Message
-2,2024-08-28 11:39:30.885,2024-08-28 11:40:52.311,C:\Users\anubhav.gupta\Provar_Workspaces\Workspace_2\LearningProvar\tests\Basic Guide Impementation,UITestingDemo.testcase,1,0,0,,
-Summary,2024-08-28 11:39:30.885,2024-08-28 11:40:52.613,,,1,0,0,1
+8,2024-08-28 15:33:19.633,2024-08-28 15:33:47.265,C:\Users\anubhav.gupta\Provar_Workspaces\Workspace_2\LearningProvar\tests\Basic Guide Impementation,Main_Task.testcase,1,0,0,,
+8,2024-08-28 15:33:47.421,2024-08-28 15:35:13.995,C:\Users\anubhav.gupta\Provar_Workspaces\Workspace_2\LearningProvar\tests\UOP Course,TableTesting.testcase,1,0,0,,
+Summary,2024-08-28 15:33:19.611,2024-08-28 15:35:20.860,,,2,0,0,2

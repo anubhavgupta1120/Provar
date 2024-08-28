@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02udL000003zOi1QAE" durableId="06mdL000003zOi1QAE" lightningApp="true" n="Learn_Salesforce" s="" seqNum="1" t="Learn Salesforce">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="Instructor_Record_Page" sfObjectName="Instructor__c"/>
+    <SfFlexiPageAssignment flexipageName="Home" sfObjectName="standard-home"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<lockManagerState class="lockManagerState" leaseIdSeq="19576">
+  <lockManagers>
+    <mananger guid="cb762fa6-f7c0-4c97-aa43-5b4cdc08f234" ip="localhost" name="TEC1" port="53552"/>
+  </lockManagers>
+  <resourceMap/>
+</lockManagerState>

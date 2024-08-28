@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testProject guid="2881822b-270e-404c-839e-cb0bfe1d3cd9" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
+<testProject guid="2881822b-270e-404c-839e-cb0bfe1d3cd9" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
   <title>/LearningProvar/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
@@ -118,6 +118,7 @@
       <summary>Fixed 1920x1080</summary>
     </browserConfiguration>
   </browserConfigurations>
+  <testCyclePath>TestCycle</testCyclePath>
   <browserApplications>
     <browserApplication connectionTypes="sf" name="Salesforce1">
       <properties>

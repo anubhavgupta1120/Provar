@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" defaultCompactLayoutId="Student__c.0AHdL000000BEVt" deleteable="true" feedEnabled="true" keyPrefix="a00" label="Student" labelPlural="Students" layoutable="true" metadataLabel="Student" n="Student__c" queryable="true" retrieveable="true" s="" t="Student (a00)" updatable="true" urlDetail="/{ID}" urlEdit="/{ID}/e" urlNew="/a00/e">
+  <fields>
+    <sfField length="18" n="Id" t="Student ID" type="id"/>
+    <sfField n="IsDeleted" t="Deleted" type="_boolean"/>
+    <sfField autoNumberField="true" createable="false" editPermission="false" length="80" n="Name" nameField="true" t="Student ID" updateable="false"/>
+    <sfField length="18" n="RecordTypeId" relationshipName="RecordType" t="Record Type" type="reference">
+      <referenceTos>
+        <string>RecordType</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="SystemModstamp" t="System Modstamp" type="datetime"/>
+    <sfField n="LastActivityDate" t="Last Activity" type="date"/>
+    <sfField n="LastViewedDate" t="Last Viewed Date" type="datetime"/>
+    <sfField n="LastReferencedDate" t="Last Referenced Date" type="datetime"/>
+    <sfField length="50" n="Name__c" required="true" t="Name"/>
+    <sfField length="100" n="Father_Name__c" t="Father Name"/>
+    <sfField length="100" n="Mother_Name__c" t="Mother Name"/>
+    <sfField length="40" n="Phone__c" t="Phone" type="phone"/>
+    <sfField length="80" n="Email__c" required="true" t="Email" type="email"/>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="Address__c" required="true" t="Address" type="textarea"/>
+    <sfField n="Entrance_Score__c" precision="7" scale="2" t="Entrance Score" type="_double"/>
+    <sfField n="Age__c" precision="18" t="Age" type="_double"/>
+    <sfField length="255" n="Stream__c" restrictedPicklist="true" t="Stream" type="picklist">
+      <picklistEntryIds>1,2</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="PCB" s=""/>
+        <sfPLE id="2" n="PCM" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Salesforce_Role__c" restrictedPicklist="true" t="Salesforce Role" type="picklist">
+      <picklistEntryIds>3,4,5,6,7</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="3" n="Admin" s=""/>
+        <sfPLE id="4" n="Developer" s=""/>
+        <sfPLE id="5" n="Quality Transfer" s=""/>
+        <sfPLE id="6" n="Business Analyst" s=""/>
+        <sfPLE id="7" n="Project Manager" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="Passout__c" t="Passout?" type="_boolean"/>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="Career_Objective__c" t="Career Objective" type="textarea"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32768" n="Brief_Bio__c" t="Brief Bio" type="textarea"/>
+    <sfField extraTypeInfo="richtextarea" filterable="false" length="32768" n="Resume__c" t="Resume" type="textarea"/>
+    <sfField n="Enrolled_Full_Time__c" t="Enrolled Full Time?" type="_boolean"/>
+    <sfField controllerName="01IdL000001NOtt.00NdL0000032mLm" dependentPicklist="true" length="4099" n="SalesForce_Skill_set__c" precision="4" restrictedPicklist="true" t="SalesForce Skill set" type="multipicklist">
+      <picklistEntryIds>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="8" n="Admin Concept" s=""/>
+        <sfPLE id="9" n="Data Security" s=""/>
+        <sfPLE id="10" n="Report" s=""/>
+        <sfPLE id="11" n="Dashboard" s=""/>
+        <sfPLE id="12" n="Flow" s=""/>
+        <sfPLE id="13" n="Apex" s=""/>
+        <sfPLE id="14" n="Trigger" s=""/>
+        <sfPLE id="15" n="Test Class" s=""/>
+        <sfPLE id="16" n="Async Apex" s=""/>
+        <sfPLE id="17" n="Integration" s=""/>
+        <sfPLE id="18" n="Visualforce" s=""/>
+        <sfPLE id="19" n="Aura" s=""/>
+        <sfPLE id="20" n="LWC" s=""/>
+        <sfPLE id="21" n="JIRA" s=""/>
+        <sfPLE id="22" n="Smart sheets" s=""/>
+        <sfPLE id="23" n="Deployment" s=""/>
+        <sfPLE id="24" n="Lucid Chart" s=""/>
+        <sfPLE id="25" n="G Suite" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField controllerName="01IdL000001NOtt.00NdL0000032ulx" dependentPicklist="true" globalPickListName="Weekdays" length="255" n="Weekdays__c" restrictedPicklist="true" t="Weekdays" type="picklist">
+      <picklistEntryIds>26,27,28,29,30,31,32</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="26" n="Friday" s=""/>
+        <sfPLE id="27" n="Monday" s=""/>
+        <sfPLE id="28" n="Saturday" s=""/>
+        <sfPLE id="29" n="Sunday" s=""/>
+        <sfPLE id="30" n="Thursday" s=""/>
+        <sfPLE id="31" n="Tuesday" s=""/>
+        <sfPLE id="32" n="Wednesday" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField isMasterDetail="true" length="18" n="Class__c" relationshipLabel="Students" relationshipName="Class__r" required="true" t="Class" type="reference">
+      <referenceTos>
+        <string>Class__c</string>
+      </referenceTos>
+    </sfField>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="TaskRelation" field="RelationId" n="TaskRelations" relationshipName="TaskRelations" s="2-" t="TaskRelation"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship childName="VoiceCall" field="RelatedRecordId" n="RelatedRecords" relationshipName="RelatedRecords" s="2-" t="VoiceCall"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="FinanceBalanceSnapshot" field="ReferenceEntityId" n="FinanceBalanceSnapshots" relationshipName="FinanceBalanceSnapshots" s="2-" t="FinanceBalanceSnapshot"/>
+    <sfObjectRelationship childName="FinanceBalanceSnapshot" field="LegalEntityId" n="FinanceBalanceSnapshots" relationshipName="FinanceBalanceSnapshots" s="2-" t="FinanceBalanceSnapshot"/>
+    <sfObjectRelationship childName="FinanceTransaction" field="ReferenceEntityId" n="FinanceTransactions" relationshipName="FinanceTransactions" s="2-" t="FinanceTransaction"/>
+    <sfObjectRelationship childName="FinanceTransaction" field="SourceEntityId" n="SourceFinanceTransactions" relationshipName="SourceFinanceTransactions" s="2-" t="FinanceTransaction"/>
+    <sfObjectRelationship childName="FinanceTransaction" field="DestinationEntityId" n="DestinationFinanceTransactions" relationshipName="DestinationFinanceTransactions" s="2-" t="FinanceTransaction"/>
+    <sfObjectRelationship childName="FinanceTransaction" field="LegalEntityId" n="FinanceTransactions" relationshipName="FinanceTransactions" s="2-" t="FinanceTransaction"/>
+    <sfObjectRelationship childName="FinanceTransaction" field="ParentReferenceEntityId" n="ParentFinanceTransactions" relationshipName="ParentFinanceTransactions" s="2-" t="FinanceTransaction"/>
+    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship childName="FlowOrchestrationWorkItem" field="RelatedRecordId" n="FlowOrchestrationWorkItems" relationshipName="FlowOrchestrationWorkItems" s="2-" t="FlowOrchestrationWorkItem"/>
+    <sfObjectRelationship childName="UserDefinedLabelAssignment" field="ItemId" n="UserDefinedLabelAssignments" relationshipName="UserDefinedLabelAssignments" s="2-" t="UserDefinedLabelAssignment"/>
+    <sfObjectRelationship childName="InventoryItemReservation" field="ItemReservationSourceId" n="InventoryReservationSources" relationshipName="InventoryReservationSources" s="2-" t="InventoryItemReservation"/>
+    <sfObjectRelationship childName="InventoryReservation" field="ReservationSourceId" n="InventoryReservations" relationshipName="InventoryReservations" s="2-" t="InventoryReservation"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="Student__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="01IdL000001NOtt.History"/>
+    <sfObjectRelationship childName="Student__Feed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="01IdL000001NOtt.Feed"/>
+    <sfObjectRelationship childName="StdClass__c" field="Student__c" n="StdClasses__r" relationshipName="StdClasses__r" s="2-" t="01IdL000001Zw29"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType defaultRecordType="false" fromToolingApi="true" fullName="Experienced" layoutsLoaded="false" n="Experienced" recordTypeId="012dL000001xA2zQAE" s="3-"/>
+    <sfRecordType fromToolingApi="true" fullName="Fresher" layoutsLoaded="false" n="Fresher" recordTypeId="012dL000001xV14QAE" s="3-"/>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink n="Tab" s="" t="Students Tab"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="View Students__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Students__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome List Students__r" n="New"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="View Students__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Students__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+  <homeListColumns>
+    <string>STUDENT__C.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>STUDENT__C.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>STUDENT__C.NAME</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Name__c</string>
+    <string>RecordTypeId</string>
+    <string>Salesforce_Role__c</string>
+    <string>Email__c</string>
+  </compactLayoutFields>
+  <listViewActions/>
+</sfObject>

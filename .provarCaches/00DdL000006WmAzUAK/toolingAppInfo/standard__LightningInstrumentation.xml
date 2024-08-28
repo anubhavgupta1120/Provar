@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingAppInfo>
+  <appDefinition DeveloperName="LightningInstrumentation" Label="LightningInstrumentation" NamespacePrefix="standard" NavType="Standard" UiType="Lightning"/>
+</toolingAppInfo>
