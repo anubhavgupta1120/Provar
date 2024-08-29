@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="ec37f814-00e4-4082-a611-e48d28858a0a" id="10">
+<testCase guid="ec37f814-00e4-4082-a611-e48d28858a0a" id="5">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="6e66fd5a-8e68-4724-8013-f481e038c03b" name="UiConnect" testItemId="1" title="UI Connect: HTML_Tables">
@@ -90,7 +90,7 @@
                   <value class="value" valueClass="boolean">true</value>
                 </argument>
                 <argument id="debugRowLocator">
-                  <value class="value" valueClass="boolean">false</value>
+                  <value class="value" valueClass="boolean">true</value>
                 </argument>
                 <argument id="resultName">
                   <value class="value" valueClass="string">Row</value>
@@ -98,7 +98,9 @@
                 <argument id="resultScope">
                   <value class="value" valueClass="string">Local</value>
                 </argument>
-                <argument id="autoRetry"/>
+                <argument id="autoRetry">
+                  <value class="value" valueClass="boolean">false</value>
+                </argument>
               </arguments>
               <clauses>
                 <clause name="substeps" testItemId="8">

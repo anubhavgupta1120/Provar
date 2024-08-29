@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="905c2364-aecc-4672-a889-17689b670e3e" id="0" registryId="905c2364-aecc-4672-a889-17689b670e3e">
+<testCase guid="905c2364-aecc-4672-a889-17689b670e3e" id="30" registryId="905c2364-aecc-4672-a889-17689b670e3e">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.bundled.apis.bdd.Given" guid="a0804659-4b39-48a7-be00-aac00d12c507" name="Given" testItemId="2" title="Given: User is on Learn Salesforce Application Home Page">
@@ -969,7 +969,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0ed9eea7-65b6-41b9-80ef-2ad73883598c" name="UiDoAction" testItemId="128" title="Set the Email to gaurav.kumar111@gmail.com">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0ed9eea7-65b6-41b9-80ef-2ad73883598c" name="UiDoAction" testItemId="128" title="Set the Email to gaurav.kumar1874765411@gmail.com">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:pageobject:field?field=email&amp;pageId=pageobjects.NewStudentPage"/>
@@ -978,7 +978,7 @@
                           <value class="uiInteraction" uri="ui:interaction?name=set"/>
                         </argument>
                         <argument id="value">
-                          <value class="value" valueClass="string">gaurav.kumar111@gmail.com</value>
+                          <value class="value" valueClass="string">gaurav.kumar1874765411@gmail.com</value>
                         </argument>
                         <argument id="blur">
                           <value class="value" valueClass="boolean">false</value>
@@ -1003,7 +1003,7 @@
                         </argument>
                         <argument id="locatorParams"/>
                         <argument id="interactionDescription">
-                          <value class="value" valueClass="string">Set the Email to gaurav.kumar111@gmail.com</value>
+                          <value class="value" valueClass="string">Set the Email to gaurav.kumar1874765411@gmail.com</value>
                         </argument>
                       </arguments>
                       <generatedParameters>
@@ -1302,53 +1302,6 @@
                           <value class="uiWait" uri="ui:wait:autoRetry:timeout=10"/>
                         </argument>
                       </arguments>
-                    </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="972226ff-4978-4a2f-a380-6f44046f0756" name="UiDoAction" testItemId="139" title="Choose File the File Input">
-                      <arguments>
-                        <argument id="locator">
-                          <value class="uiLocator" uri="ui:pageobject:field?field=fileInput&amp;pageId=pageobjects.NewStudentPage"/>
-                        </argument>
-                        <argument id="interaction">
-                          <value class="uiInteraction" uri="ui:interaction?name=file"/>
-                        </argument>
-                        <argument id="fileLocation">
-                          <value class="url">templates/Data.json</value>
-                        </argument>
-                        <argument id="fileContents"/>
-                        <argument id="captureBefore">
-                          <value class="value" valueClass="string">false</value>
-                        </argument>
-                        <argument id="captureAfter">
-                          <value class="value" valueClass="string">false</value>
-                        </argument>
-                        <argument id="beforeWait">
-                          <value class="uiWait" uri="default"/>
-                        </argument>
-                        <argument id="afterWait">
-                          <value class="uiWait" uri="default"/>
-                        </argument>
-                        <argument id="autoRetry">
-                          <value class="uiWait" uri="ui:wait:autoRetry:timeout=10"/>
-                        </argument>
-                        <argument id="locatorParams"/>
-                        <argument id="interactionDescription">
-                          <value class="value" valueClass="string">Choose File the File Input</value>
-                        </argument>
-                      </arguments>
-                      <generatedParameters>
-                        <apiParam group="value" name="fileLocation" seq="10000" title="File Name/Location">
-                          <summary>The file to be uploaded.</summary>
-                          <type>
-                            <urlType/>
-                          </type>
-                        </apiParam>
-                        <apiParam group="value" name="fileContents" seq="10001" title="File Contents">
-                          <summary>The data to be uploaded.</summary>
-                          <type>
-                            <textType/>
-                          </type>
-                        </apiParam>
-                      </generatedParameters>
                     </apiCall>
                   </steps>
                 </clause>
