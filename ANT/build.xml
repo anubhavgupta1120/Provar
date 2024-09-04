@@ -9,11 +9,11 @@
 	<taskdef name="Provar-Compile" classname="com.provar.testrunner.ant.CompileTask" classpath="${provar.home}/ant/ant-provar.jar"/>
 	<taskdef name="Run-Test-Case" classname="com.provar.testrunner.ant.RunnerTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
 	<taskdef name="Test-Cycle-Report" classname="com.provar.testrunner.ant.TestCycleReportTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
-	
+
 	<target name="runtests">
-	
+
 		<Provar-Compile provarHome="${provar.home}" projectPath="${testproject.home}"/>
-	
+
 		<Run-Test-Case provarHome="${provar.home}" 
 				projectPath="${testproject.home}" 
 				resultsPath="${testproject.results}" 
@@ -35,10 +35,11 @@
     	    	testCycleRunType="ALL"
 				invokeTestRunMonitor="false"
 		>
-			<fileset id="testplan" dir="../plans/TP_Regression"></fileset>
+			<fileset id="testplan" dir="../plans/TP_Regression">
+			</fileset>
 		</Run-Test-Case>
 
-	<Run-Test-Case provarHome="${provar.home}" 
+		<Run-Test-Case provarHome="${provar.home}" 
 				projectPath="${testproject.home}" 
 				resultsPath="${testproject.results}" 
 				resultsPathDisposition="Replace" 
@@ -58,11 +59,24 @@
 				dontFailBuild="true"
 				invokeTestRunMonitor="false"
 		>
-			<fileset id="testplan" dir="../plans/TP_Regression"></fileset>
+			<fileset id="testplan" dir="../plans/TP_Regression">
+			</fileset>
 			<planFeature name="PDF" type="OUTPUT" enabled="true"/>
 			<planFeature name="PIECHART" type="OUTPUT" enabled="true"/>
 			<planFeature name="EMAIL" type="NOTIFICATION" enabled="true"/>
 		</Run-Test-Case>
+
+		<Test-Cycle-Report provarHome="${provar.home}"
+								projectPath="${testproject.home}" 
+					        	testCyclePath="${testcycle.path}"
+								reportPath="${testproject.home}/ANT/Results/Artifacts/executionReport.pdf"
+								failBuildIfFailures="true"
+								invokeTestRunMonitor="true"
+								>
+			<emailProperties sendEmail="true" primaryRecipients="anubhavgp11@gmail.com" ccRecipients="" bccRecipients="" emailSubject="Provar test run report" attachExecutionReport="true" attachZip="true"/>
+			<attachmentProperties includeAllFailuresInSummary="true" includeBdd="false" includeSkipped="false" includeTestCasePathHierarchy="true" includeTestCaseShowSummary="true" includeBasicLogs="false" includeDetailLogs="false" includeDiagnosticTrace="false" includeTestStepTime="true" includeNoScreenshot="false" includeScreenshotThumbnail="false" includeFullScreenShot="true"/>
+		</Test-Cycle-Report>
+
 
 	</target>
 

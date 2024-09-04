@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="AuthorizationForm" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Authorization Form" Name="standard-AuthorizationForm" SobjectName="AuthorizationForm" Url="https://provartesting-dev-ed.develop.my.salesforce.com/0cI/o"/>
-</toolingTabInfo>

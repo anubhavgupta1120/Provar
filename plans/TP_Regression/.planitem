@@ -44,9 +44,6 @@
         <namedValue name="includeTestStepTime">
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
-        <namedValue name="includeBasicLogs">
-          <value class="value" valueClass="boolean">false</value>
-        </namedValue>
         <namedValue name="includeScreenshotThumbnail">
           <value class="value" valueClass="boolean">false</value>
         </namedValue>
@@ -66,6 +63,9 @@
           <value class="value" valueClass="boolean">false</value>
         </namedValue>
         <namedValue name="includeDetailLogs">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeBasicLogs">
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
       </settings>

@@ -1,3 +1,2 @@
-2024/08/28-14:01:20.938 ce0 Reusing MANIFEST C:\Users\anubhav.gupta\Provar_Workspaces\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\shared_proto_db\metadata/MANIFEST-000001
-2024/08/28-14:01:20.938 ce0 Recovering log #3
-2024/08/28-14:01:20.939 ce0 Reusing old log C:\Users\anubhav.gupta\Provar_Workspaces\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\shared_proto_db\metadata/000003.log 
+2024/09/04-13:28:55.457 34f4 Creating DB C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\shared_proto_db\metadata since it was missing.
+2024/09/04-13:28:55.462 34f4 Reusing MANIFEST C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\shared_proto_db\metadata/MANIFEST-000001

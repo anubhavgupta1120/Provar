@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="CommSubscriptionConsent" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Communication Subscription Consents" Name="standard-CommSubscriptionConsent" SobjectName="CommSubscriptionConsent" Url="https://provartesting-dev-ed.develop.my.salesforce.com/0dY/o"/>
-</toolingTabInfo>

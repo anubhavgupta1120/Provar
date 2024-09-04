@@ -1,122 +1,29 @@
-[11628:9480:0904/120331.839:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.119 (not a warning)
-[11628:9480:0904/120331.855:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
-[11628:9480:0904/120331.855:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
-[11628:9480:0904/120331.918:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[11628:9480:0904/120331.928:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
-[2084:8068:0904/120332.097:INFO:cpu_info.cc(53)] Available number of cores: 8
-[1760:8552:0904/120332.175:INFO:cpu_info.cc(53)] Available number of cores: 8
-[18692:7340:0904/120332.435:INFO:cpu_info.cc(53)] Available number of cores: 8
-[16784:11968:0904/120333.088:INFO:cpu_info.cc(53)] Available number of cores: 8
-[9896:7324:0904/120334.962:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11628:9480:0904/120335.077:INFO:CONSOLE(1)] "%c【AdEngine】(production-194) queued at 1777ms and loaded in 282ms. (w3schools.com:11445-1725353981974-default) color:#2dc9ac;", source: https://adengine.snigelweb.com/w3schools.com/11445-1725353981974/adngin.js?exp=1 (1)
-[18476:10568:0904/120336.219:INFO:cpu_info.cc(53)] Available number of cores: 8
-[8176:7396:0904/120336.330:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11628:9480:0904/120336.458:INFO:CONSOLE(0)] "Access to fetch at 'https://i.connectad.io/api/v2' from origin 'https://www.w3schools.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.", source: https://www.w3schools.com/html/html_tables.asp (0)
-[5944:12280:0904/120336.499:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -101
-[5944:12280:0904/120336.729:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 1
-[5944:12280:0904/120336.729:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 3
-[5944:12280:0904/120336.729:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 5
-[11628:9480:0904/120336.774:INFO:CONSOLE(18)] "Error: ns!", source: https://cadmus.script.ac/dahhc4ozyvjm6/script.js (18)
-[11628:9480:0904/120336.782:INFO:CONSOLE(22)] "Error: ns!", source: https://cadmus.script.ac/dahhc4ozyvjm6/script.js (22)
-[5944:12280:0904/120336.807:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 1
-[18628:4764:0904/120336.974:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11524:7604:0904/120337.203:INFO:cpu_info.cc(53)] Available number of cores: 8
-[5944:12280:0904/120337.257:WARNING:spdy_session.cc(2940)] Received WINDOW_UPDATE for invalid stream 1
-[5944:12280:0904/120337.257:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 1
-[16140:6116:0904/120338.241:INFO:cpu_info.cc(53)] Available number of cores: 8
-[14376:11312:0904/120338.255:INFO:cpu_info.cc(53)] Available number of cores: 8
-[18316:14144:0904/120338.322:INFO:cpu_info.cc(53)] Available number of cores: 8
-[8632:14908:0904/120338.346:INFO:cpu_info.cc(53)] Available number of cores: 8
-[4904:19252:0904/120338.424:INFO:cpu_info.cc(53)] Available number of cores: 8
-[3992:8568:0904/120338.425:INFO:cpu_info.cc(53)] Available number of cores: 8
-[14520:5680:0904/120338.470:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19576:19580:0904/120338.513:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19156:14020:0904/120338.519:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19620:19624:0904/120338.603:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19584:19588:0904/120338.603:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19768:19772:0904/120338.603:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19748:19752:0904/120338.683:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19820:19824:0904/120338.729:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19932:19936:0904/120338.817:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20184:20188:0904/120338.824:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20204:20208:0904/120338.867:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20212:20216:0904/120338.899:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20220:20224:0904/120338.922:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20296:20300:0904/120338.975:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20344:20348:0904/120339.162:INFO:cpu_info.cc(53)] Available number of cores: 8
-[5944:12280:0904/120339.848:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -200
-[20692:20696:0904/120341.665:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20684:20688:0904/120341.665:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20700:20704:0904/120341.673:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20716:20720:0904/120341.704:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20724:20728:0904/120341.708:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20708:20712:0904/120341.708:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21024:21028:0904/120341.819:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20732:20736:0904/120341.831:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21040:21044:0904/120341.870:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21056:21060:0904/120341.871:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21048:21052:0904/120341.876:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21064:21068:0904/120341.877:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21072:21076:0904/120342.048:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21392:21396:0904/120342.110:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21404:21408:0904/120342.122:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21440:21444:0904/120342.160:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21460:21464:0904/120342.199:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21500:14816:0904/120342.216:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19780:19788:0904/120342.280:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19864:19860:0904/120342.297:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20444:20212:0904/120342.312:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19736:19644:0904/120342.334:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20260:20268:0904/120342.417:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20548:20556:0904/120342.481:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20296:7104:0904/120342.498:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20448:20456:0904/120342.589:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19584:20616:0904/120342.694:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20764:20800:0904/120342.822:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20868:20708:0904/120342.909:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20896:20904:0904/120342.963:INFO:cpu_info.cc(53)] Available number of cores: 8
-[4400:21468:0904/120343.035:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20396:20400:0904/120344.438:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20740:19812:0904/120344.686:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19580:19852:0904/120344.728:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20984:20992:0904/120345.190:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20960:20972:0904/120345.205:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20980:21008:0904/120345.210:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20616:21016:0904/120345.235:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20744:20712:0904/120345.236:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20752:20760:0904/120345.265:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19584:20688:0904/120345.439:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20920:20716:0904/120346.087:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11628:9480:0904/120403.095:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120403.139:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120403.190:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120403.270:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120403.323:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120403.354:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120403.410:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120403.441:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120403.481:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[13216:21016:0904/120403.622:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11628:9480:0904/120403.760:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120403.786:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120405.912:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120405.938:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120405.962:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.003:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.025:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120406.046:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.076:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.098:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120406.122:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.242:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.265:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120406.289:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.317:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.341:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120406.376:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.414:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.432:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[11628:9480:0904/120406.446:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[11628:9480:0904/120406.777:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:45156
-[11628:9480:0904/120406.865:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 1, file size:0
-[11628:9480:0904/120406.976:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[8268:21040:0904/133203.668:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.119 (not a warning)
+[8268:21040:0904/133203.668:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[8268:21040:0904/133203.668:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[8268:21040:0904/133203.724:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[8268:21040:0904/133203.733:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[5684:8:0904/133203.904:INFO:cpu_info.cc(53)] Available number of cores: 8
+[1760:13816:0904/133203.968:INFO:cpu_info.cc(53)] Available number of cores: 8
+[7620:6860:0904/133204.263:INFO:cpu_info.cc(53)] Available number of cores: 8
+[16620:14584:0904/133204.927:INFO:cpu_info.cc(53)] Available number of cores: 8
+[8268:21040:0904/133205.319:INFO:CONSOLE(0)] "Refused to execute script from 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled.", source: https://crio-qkart-frontend-qa.vercel.app/ (0)
+[8268:21040:0904/133205.879:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[8268:21040:0904/133205.978:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[8268:21040:0904/133206.080:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://crio-qkart-frontend-qa.vercel.app/register (0)
+[8268:21040:0904/133206.080:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://crio-qkart-frontend-qa.vercel.app/register (0)
+[8268:21040:0904/133206.111:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[8268:21040:0904/133206.210:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[8268:21040:0904/133206.327:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[8268:21040:0904/133212.655:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://crio-qkart-frontend-qa.vercel.app/login (0)
+[8268:21040:0904/133216.532:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[8268:21040:0904/133216.726:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[8268:21040:0904/133216.902:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[8268:21040:0904/133244.492:INFO:CONSOLE(0)] "Refused to execute script from 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled.", source: https://crio-qkart-frontend-qa.vercel.app/ (0)
+[8268:21040:0904/133306.176:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[1980:17080:0904/133314.008:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[8268:21040:0904/133316.688:INFO:CONSOLE(1535)] "[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement],[object HTMLParagraphElement]", source:  (1535)
+[1980:17080:0904/133324.138:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1980:17080:0904/133330.691:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1980:17080:0904/133331.017:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[8268:21040:0904/133335.688:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 1, file size:0
