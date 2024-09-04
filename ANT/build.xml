@@ -30,7 +30,7 @@
 				stopTestRunOnError="false"
 				sendEmail ="TESTCYCLE"
 				dontFailBuild="true"
-				testCycleAutoRerunCount="2"
+				testCycleAutoRerunCount="1"
 	        	testCyclePath="${testcycle.path}"
     	    	testCycleRunType="ALL"
 				invokeTestRunMonitor="false"
@@ -38,28 +38,6 @@
 			<fileset id="testplan" dir="../plans/TP_Regression"></fileset>
 		</Run-Test-Case>
 
-	<Run-Test-Case provarHome="${provar.home}" 
-				projectPath="${testproject.home}" 
-				resultsPath="${testproject.results}" 
-				resultsPathDisposition="Replace" 
-				testEnvironment="" 
-				webBrowser="Chrome" 
-				webBrowserConfiguration="Full Screen"
-				webBrowserProviderName="Desktop"
-				webBrowserDeviceName="Full Screen" 
-				salesforceMetadataCache="Reload" 
-				projectCachePath="../.provarCaches"
-				testOutputlevel="BASIC" 
-				pluginOutputlevel="WARNING"
-				stopTestRunOnError="false"
-								testCycleAutoRerunCount="1"
-	        	testCyclePath="${testcycle.path}"
-				testCycleRunType="FAILURES_AND_SKIPPED"
-				dontFailBuild="true"
-				invokeTestRunMonitor="false"
-		>
-			<fileset id="testplan" dir="../plans/TP_Regression"></fileset>
-		</Run-Test-Case>
 	<Run-Test-Case provarHome="${provar.home}" 
 				projectPath="${testproject.home}" 
 				resultsPath="${testproject.results}" 
