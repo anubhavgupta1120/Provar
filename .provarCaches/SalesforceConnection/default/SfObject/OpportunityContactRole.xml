@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="00K" label="Opportunity Contact Role" labelPlural="Opportunity Contact Role" layoutable="true" n="OpportunityContactRole" queryable="true" readPermission="false" retrieveable="true" s="" t="Opportunity Contact Role (00K)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome OpportunityContactRoles" n="New"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

@@ -1,2 +1,6 @@
-2024/09/04-13:28:55.529 c54 Creating DB C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\Local Storage\leveldb since it was missing.
-2024/09/04-13:28:55.551 c54 Reusing MANIFEST C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\Local Storage\leveldb/MANIFEST-000001
+2024/09/10-18:06:16.719 2414 Reusing MANIFEST C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\Local Storage\leveldb/MANIFEST-000001
+2024/09/10-18:06:16.733 2414 Recovering log #3
+2024/09/10-18:06:16.738 2414 Reusing old log C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\.provarCaches\.chromeProfiles\profile0\Default\Local Storage\leveldb/000003.log 
+2024/09/10-18:06:26.686 58a8 Level-0 table #5: started
+2024/09/10-18:06:26.697 58a8 Level-0 table #5: 73943 bytes OK
+2024/09/10-18:06:26.707 58a8 Delete type=0 #3

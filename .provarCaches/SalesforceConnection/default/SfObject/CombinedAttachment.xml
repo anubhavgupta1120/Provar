@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" label="Note, Attachment, Google Doc And File" labelPlural="Notes, Attachments, Google Docs And Files" n="CombinedAttachment" readPermission="false" s="" t="Note, Attachment, Google Doc And File">
+  <standardActions>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View CombinedAttachments" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View CombinedAttachments" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>
