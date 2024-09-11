@@ -10,12 +10,22 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: PowerShell@1
+  inputs:
+    targetType: 'inline'
+    script: |
+      $webclient = New-Object System.Net.WebClient
+      $url = "https://download.provartesting.com/latest/Provar_ANT_latest.zip"
+      $file = "Provar_ANT_latest.zip"
+      
+      $webclient.DownloadFile($url,$file)
+      Expand-Archive -LiteralPath Provar_ANT_latest.zip -DestinationPath ProvarHome
+
 - task: Ant@1
   inputs:
-    workingDirectory: ''
-    buildFile: 'build.xml'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
+    buildFile: 'ANT\buildAzure.xml'
+    options: 
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
