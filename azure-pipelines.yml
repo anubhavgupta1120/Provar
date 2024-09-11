@@ -21,12 +21,11 @@ steps:
       $webclient.DownloadFile($url,$file)
       Expand-Archive -LiteralPath Provar_ANT_latest.zip -DestinationPath ProvarHome
 
-- task: Ant@2
+- task: Ant@1
   inputs:
-    buildFile: 'buildAzure.xml'
+    buildFile: 'ANT\buildAzure.xml'
     options: 
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
