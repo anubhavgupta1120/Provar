@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LearningProvar/tests" tests="1" failures="0" skipped="0" hostname="ibm-anubhavgupta" time="22.848" timestamp="Mon Sep 23 13:59:35 IST 2024">
+	<properties>
+		<property name="excludeCallableTestCases" value="true"/>
+		<property name="testEnvironment" value="QA"/>
+		<property name="pluginOutputLevel" value="WARNING"/>
+		<property name="projectPath" value=".."/>
+		<property name="salesforceMetadataCache" value="Reload"/>
+		<property name="resultsPathDisposition" value="Replace"/>
+		<property name="testOutputLevel" value="INFO"/>
+		<property name="webBrowserType" value="Chrome"/>
+		<property name="resultsPath" value="../ANT/Results/Result1"/>
+		<property name="webBrowserConfiguration" value="Full Screen"/>
+		<property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\ANT\..\..\.provarCaches"/>
+	</properties>
+	<testcase classname="tests/Basic Guide Impementation\Main_Task.testcase" name="Main_Task.testcase" time="22.721">
+	</testcase>
+</testsuite>

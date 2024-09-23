@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite failures="0" hostname="ibm-anubhavgupta" id="0" name="LearningProvar/tests" package="" skipped="0" tests="0" time="1.72707904E9" timestamp="Thu Jan 01 05:30:00 IST 1970">
+  <testsuite failures="0" hostname="ibm-anubhavgupta" id="0" name="LearningProvar/tests" package="" skipped="0" tests="2" time="102.561" timestamp="Mon Sep 23 13:42:42 IST 2024">
 	    <properties>
 		      <property name="excludeCallableTestCases" value="true" />
 
@@ -25,6 +25,12 @@
 		      <property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\ANT\..\..\.provarCaches" />
 
 	    </properties>
+
+	    <testcase classname="tests/Basic Guide Impementation\Main_Task.testcase" name="Main_Task.testcase" time="22.388">
+	</testcase>
+
+	    <testcase classname="tests/Basic Guide Impementation\UITestingDemo.testcase" name="UITestingDemo.testcase" time="79.977">
+	</testcase>
 
   </testsuite>
 </testsuites>
