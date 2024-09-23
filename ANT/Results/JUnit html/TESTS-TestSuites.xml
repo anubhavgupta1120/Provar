@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite failures="0" hostname="ibm-anubhavgupta" id="0" name="LearningProvar/tests" package="" skipped="0" tests="0" time="7.386" timestamp="Mon Sep 23 12:30:15 IST 2024">
+  <testsuite failures="0" hostname="ibm-anubhavgupta" id="0" name="LearningProvar/tests" package="" skipped="0" tests="0" time="1.72707904E9" timestamp="Thu Jan 01 05:30:00 IST 1970">
 	    <properties>
 		      <property name="excludeCallableTestCases" value="true" />
 
-		      <property name="testEnvironment" value="" />
+		      <property name="testEnvironment" value="QA" />
 
 		      <property name="pluginOutputLevel" value="WARNING" />
 
@@ -14,7 +14,7 @@
 
 		      <property name="resultsPathDisposition" value="Replace" />
 
-		      <property name="testOutputLevel" value="FINE" />
+		      <property name="testOutputLevel" value="INFO" />
 
 		      <property name="webBrowserType" value="Chrome" />
 
@@ -22,7 +22,7 @@
 
 		      <property name="webBrowserConfiguration" value="Full Screen" />
 
-		      <property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\ANT\..\.provarCaches" />
+		      <property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\ANT\..\..\.provarCaches" />
 
 	    </properties>
 

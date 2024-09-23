@@ -1,81 +1,42 @@
-[15248:13044:0910/182156.183:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.120 (not a warning)
-[15248:13044:0910/182156.194:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
-[15248:13044:0910/182156.200:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
-[15248:13044:0910/182156.282:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[15248:13044:0910/182156.290:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
-[17368:14916:0910/182156.508:INFO:cpu_info.cc(53)] Available number of cores: 8
-[22460:7284:0910/182156.557:INFO:cpu_info.cc(53)] Available number of cores: 8
-[12648:14828:0910/182156.910:INFO:cpu_info.cc(53)] Available number of cores: 8
-[14620:10204:0910/182158.191:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182158.357:INFO:CONSOLE(1)] "%c【AdEngine】(production-194) queued at 207ms and loaded in 9ms. (w3schools.com:11472-1725451268726-default) color:#2dc9ac;", source: https://adengine.snigelweb.com/w3schools.com/11472-1725451268726/adngin.js (1)
-[15248:13044:0910/182158.730:INFO:CONSOLE(18)] "Error: ns!", source: https://cadmus.script.ac/dahhc4ozyvjm6/script.js (18)
-[15248:13044:0910/182158.745:INFO:CONSOLE(22)] "Error: ns!", source: https://cadmus.script.ac/dahhc4ozyvjm6/script.js (22)
-[15248:13044:0910/182158.916:INFO:CONSOLE(0)] "Access to fetch at 'https://i.connectad.io/api/v2' from origin 'https://www.w3schools.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.", source: https://www.w3schools.com/html/html_tables.asp (0)
-[9032:9420:0910/182158.938:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11740:16836:0910/182159.510:INFO:cpu_info.cc(53)] Available number of cores: 8
-[17072:13436:0910/182159.643:INFO:cpu_info.cc(53)] Available number of cores: 8
-[8520:7448:0910/182159.819:INFO:cpu_info.cc(53)] Available number of cores: 8
-[12800:14216:0910/182200.057:INFO:cpu_info.cc(53)] Available number of cores: 8
-[12320:8440:0910/182200.209:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182200.252:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182200.321:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[16028:10920:0910/182200.387:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182200.394:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182200.508:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182201.079:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[10988:12160:0910/182201.219:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182201.233:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182201.296:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182201.337:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[15248:13044:0910/182201.398:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[12108:10736:0910/182201.558:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182201.595:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182201.639:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[24936:2600:0910/182202.529:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182204.723:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182204.769:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[15248:13044:0910/182204.814:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182204.873:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182204.916:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[15248:13044:0910/182204.959:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182205.020:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182205.057:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[10188:1740:0910/182205.158:INFO:cpu_info.cc(53)] Available number of cores: 8
-[18376:12740:0910/182205.159:INFO:cpu_info.cc(53)] Available number of cores: 8
-[11472:7812:0910/182205.180:INFO:cpu_info.cc(53)] Available number of cores: 8
-[24884:9800:0910/182205.182:INFO:cpu_info.cc(53)] Available number of cores: 8
-[9268:10800:0910/182205.216:INFO:cpu_info.cc(53)] Available number of cores: 8
-[18404:8072:0910/182205.222:INFO:cpu_info.cc(53)] Available number of cores: 8
-[8048:12956:0910/182205.226:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182205.299:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[12564:18992:0910/182205.375:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182205.543:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182205.593:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[15248:13044:0910/182205.645:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182205.717:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[15248:13044:0910/182205.752:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[15248:13044:0910/182205.797:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[7524:21432:0910/182205.803:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20296:9460:0910/182205.844:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182205.894:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[25428:12024:0910/182205.941:INFO:cpu_info.cc(53)] Available number of cores: 8
-[23160:23592:0910/182205.952:INFO:cpu_info.cc(53)] Available number of cores: 8
-[17840:6444:0910/182205.952:INFO:cpu_info.cc(53)] Available number of cores: 8
-[20192:16064:0910/182205.990:INFO:cpu_info.cc(53)] Available number of cores: 8
-[19864:9824:0910/182205.991:INFO:cpu_info.cc(53)] Available number of cores: 8
-[16772:6392:0910/182205.999:INFO:cpu_info.cc(53)] Available number of cores: 8
-[13316:3136:0910/182206.016:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182206.107:INFO:CONSOLE(1535)] "[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement],[object HTMLTableRowElement]", source:  (1535)
-[22244:22684:0910/182206.107:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15788:20224:0910/182206.113:INFO:cpu_info.cc(53)] Available number of cores: 8
-[21728:8280:0910/182206.114:INFO:cpu_info.cc(53)] Available number of cores: 8
-[18800:23296:0910/182206.145:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182206.186:INFO:CONSOLE(1535)] "[object HTMLTableElement]", source:  (1535)
-[6924:7644:0910/182206.186:INFO:cpu_info.cc(53)] Available number of cores: 8
-[23568:21256:0910/182206.285:INFO:cpu_info.cc(53)] Available number of cores: 8
-[15248:13044:0910/182206.297:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 5, file size:0
-[18476:5980:0910/182206.420:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 1
-[18476:5980:0910/182206.434:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 11
-[18476:17820:0910/182206.563:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
-[18476:17820:0910/182206.563:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
-[15248:13044:0910/182206.688:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[26892:19192:0923/132611.581:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 128.0.6613.138 (not a warning)
+[26892:19192:0923/132611.596:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[26892:19192:0923/132611.596:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[26892:19192:0923/132611.649:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[26892:19192:0923/132611.660:WARNING:chrome_command_line_pref_store.cc(121)] Additional command-line proxy switches specified when --no-proxy-server was also specified.
+[29688:4872:0923/132611.870:INFO:cpu_info.cc(53)] Available number of cores: 8
+[28760:22320:0923/132611.898:INFO:cpu_info.cc(53)] Available number of cores: 8
+[28856:17296:0923/132612.190:INFO:cpu_info.cc(53)] Available number of cores: 8
+[13964:25760:0923/132612.847:INFO:cpu_info.cc(53)] Available number of cores: 8
+[26892:19192:0923/132613.044:INFO:CONSOLE(0)] "Refused to execute script from 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled.", source: https://crio-qkart-frontend-qa.vercel.app/ (0)
+[26892:19192:0923/132613.592:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[26892:19192:0923/132613.707:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[26892:19192:0923/132613.760:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://crio-qkart-frontend-qa.vercel.app/register (0)
+[26892:19192:0923/132613.760:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://crio-qkart-frontend-qa.vercel.app/register (0)
+[26892:19192:0923/132613.892:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[26892:19192:0923/132614.014:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[26892:19192:0923/132614.124:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[26892:19192:0923/132618.603:INFO:CONSOLE(0)] "[DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o", source: https://crio-qkart-frontend-qa.vercel.app/login (0)
+[29140:8564:0923/132621.718:WARNING:spdy_session.cc(2985)] Received HEADERS for invalid stream 7
+[26892:19192:0923/132624.255:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[26892:19192:0923/132624.358:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[26892:19192:0923/132624.457:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[26892:19192:0923/132634.644:INFO:CONSOLE(0)] "Refused to execute script from 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled.", source: https://crio-qkart-frontend-qa.vercel.app/ (0)
+[26892:19192:0923/132635.028:INFO:CONSOLE(1535)] "[object HTMLInputElement]", source:  (1535)
+[26892:19192:0923/132645.270:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132700.907:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[26892:19192:0923/132710.985:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132711.016:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.062:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.108:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.140:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.171:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.202:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.234:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.269:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.297:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132716.329:INFO:CONSOLE(1535)] "[object HTMLParagraphElement]", source:  (1535)
+[26892:19192:0923/132721.654:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[26892:19192:0923/132726.803:INFO:CONSOLE(1535)] "[object HTMLButtonElement]", source:  (1535)
+[26892:19192:0923/132726.950:INFO:CONSOLE(0)] "Refused to execute script from 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled.", source: https://crio-qkart-frontend-qa.vercel.app/ (0)
+[29140:17052:0923/132727.314:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[29140:17052:0923/132727.314:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
