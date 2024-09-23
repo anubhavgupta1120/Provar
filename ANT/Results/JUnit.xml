@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LearningProvar/tests" tests="2" failures="0" skipped="0" hostname="ibm-anubhavgupta" time="102.561" timestamp="Mon Sep 23 13:42:42 IST 2024">
+<testsuite name="LearningProvar/tests" tests="0" failures="0" skipped="0" hostname="ibm-anubhavgupta" time="7.405" timestamp="Mon Sep 23 14:06:13 IST 2024">
 	<properties>
 		<property name="excludeCallableTestCases" value="true"/>
-		<property name="testEnvironment" value="QA"/>
+		<property name="testEnvironment" value=""/>
 		<property name="pluginOutputLevel" value="WARNING"/>
 		<property name="projectPath" value=".."/>
 		<property name="salesforceMetadataCache" value="Reload"/>
 		<property name="resultsPathDisposition" value="Replace"/>
-		<property name="testOutputLevel" value="INFO"/>
+		<property name="testOutputLevel" value="FINE"/>
 		<property name="webBrowserType" value="Chrome"/>
 		<property name="resultsPath" value="../ANT/Results"/>
 		<property name="webBrowserConfiguration" value="Full Screen"/>
-		<property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\ANT\..\..\.provarCaches"/>
+		<property name="projectCachePath" value="C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\ANT\..\.provarCaches"/>
 	</properties>
-	<testcase classname="tests/Basic Guide Impementation\Main_Task.testcase" name="Main_Task.testcase" time="22.388">
-	</testcase>
-	<testcase classname="tests/Basic Guide Impementation\UITestingDemo.testcase" name="UITestingDemo.testcase" time="79.977">
-	</testcase>
 </testsuite>
