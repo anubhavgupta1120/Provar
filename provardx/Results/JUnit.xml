@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LearningProvar/tests" tests="1" failures="0" skipped="0" hostname="ibm-anubhavgupta" time="90.419" timestamp="Tue Sep 17 13:44:53 IST 2024">
+	<properties>
+		<property name="testEnvironment" value=""/>
+		<property name="pluginOutputLevel" value="WARNING"/>
+		<property name="projectPath" value="C:/Users/anubhav.gupta/Provar/Workspace_2/LearningProvar"/>
+		<property name="salesforceMetadataCache" value="../.provarCaches"/>
+		<property name="resultsPathDisposition" value="Replace"/>
+		<property name="testOutputLevel" value="BASIC"/>
+		<property name="webBrowserType" value="Chrome"/>
+		<property name="resultsPath" value="C:/Users/anubhav.gupta/Provar/Workspace_2/LearningProvar/provardx/Results"/>
+		<property name="webBrowserConfiguration" value="Full Screen"/>
+		<property name="projectCachePath" value="../.provarCaches"/>
+	</properties>
+	<testcase classname="tests/C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar" name="UITestingDemo.testcase" time="85.383">
+	</testcase>
+</testsuite>

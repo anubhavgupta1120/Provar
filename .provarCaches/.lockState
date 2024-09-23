@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<lockManagerState class="lockManagerState" leaseIdSeq="5340">
+<lockManagerState class="lockManagerState" leaseIdSeq="10642">
   <lockManagers>
-    <mananger guid="b5d3e8bc-0231-4def-b98d-b8f72a7b4d32" ip="localhost" name="TEC1" port="57636"/>
+    <mananger guid="2e81c7f2-695d-4738-a300-ba24beb642e1" ip="localhost" name="TEC1" port="62973"/>
   </lockManagers>
-  <resourceMap/>
+  <resourceMap>
+    <entry>
+      <key valueClass="string">sfOrgs/00DdL000006WmAzUAK/toolingObjectInfo/Task</key>
+      <value valueClass="list">
+        <lease granted="1727074789671" id="10630" lockManagerId="2e81c7f2-695d-4738-a300-ba24beb642e1" lockMode="EXCLUSIVE" requestId="623" requested="1727074789671" threadId="Worker-0: Preloading Salesforce Object details via Tooling API for connection : SalesforceConnection"/>
+      </value>
+    </entry>
+  </resourceMap>
 </lockManagerState>

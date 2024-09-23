@@ -1,46 +1,27 @@
 {
-   "provarHome": "${PROVAR_HOME}",
-   "projectPath": "${PROVAR_PROJECT_PATH}",
-   "resultsPath": "${PROVAR_RESULTS_PATH}",
+   "provarHome":"C:/Program Files/ProvarNew/",
+   "projectPath":"C:/Users/anubhav.gupta/Provar/Workspace_2/LearningProvar",
+   "resultsPath":"C:/Users/anubhav.gupta/Provar/Workspace_2/LearningProvar/provardx/Results",
    "smtpPath": "",
-   "resultsPathDisposition": "Increment",
-   "testOutputLevel": "BASIC",
-   "pluginOutputlevel": "WARNING",
-   "stopOnError": false,
-   "lightningMode": true,
-   "connectionRefreshType": "Reload",
-   "metadata": {
-      "metadataLevel": "Reuse",
-      "cachePath": "../.provarCaches"
+   "resultsPathDisposition": "Replace", 
+   "testOutputLevel":"BASIC",
+   "pluginOutputlevel":"WARNING",
+   "stopOnError":false,
+   "lightningMode":true,
+   "connectionRefreshType":"Reload",
+   "metadata":{
+      "metadataLevel":"Reload",
+      "cachePath":"../.provarCaches"
    },
-   "environment": {
-      "testEnvironment": "${PROVAR_TEST_ENVIRONMENT}",
-      "webBrowser": "Chrome",
-      "webBrowserConfig": "Full Screen",
-      "webBrowserProviderName": "Desktop",
-      "webBrowserDeviceName": "Full Screen"
-   },
-   "testprojectSecrets": "${PROVAR_TEST_PROJECT_SECRETS}",
-   "testplanFeatures": [
-      {
-         "name": "PDF",
-         "type": "OUTPUT",
-         "enabled": "true"
-      },
-      {
-         "name": "PIECHART",
-         "type": "OUTPUT",
-         "enabled": "true"
-      },
-      {
-         "name": "EMAIL",
-         "type": "NOTIFICATION",
-         "enabled": "true"
-      },
-      {
-         "name": "TEST_MANAGER",
-         "type": "REPORTING",
-         "enabled": "true"
-      }
-   ]
+   "environment":{
+      "testEnvironment":"",
+      "webBrowser":"Chrome",
+      "webBrowserConfig":"Full Screen",
+      "webBrowserProviderName":"Desktop",
+      "webBrowserDeviceName":"Full Screen"
+   }
+   ,"testCase":[
+    	"/Basic Guide Impementation/UITestingDemo.testcase"  
+	]
+   ,"emailProperties":{"sendEmail": "false", "primaryRecipients": "", "ccRecipients": "", "bccRecipients": "", "emailSubject": "Provar test run report", "attachExecutionReport": "false", "attachZip": "false"}
 }

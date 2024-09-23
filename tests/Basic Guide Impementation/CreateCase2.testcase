@@ -107,12 +107,26 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click the New Case button</value>
                 </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                   <type>
                     <booleanType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
                   </type>
                 </apiParam>
               </generatedParameters>
@@ -158,16 +172,13 @@
       <clauses>
         <clause name="substeps" testItemId="6">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="ab3f4d38-dc10-48cd-90df-8afeb643a6fa" name="UiDoAction" testItemId="7" title="Lookup the Account Name reference to Anubhav">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="ab3f4d38-dc10-48cd-90df-8afeb643a6fa" name="UiDoAction" testItemId="7" title="Lookup the Account Name reference">
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=AccountId&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DCase%26field%3DAccountId"/>
                 </argument>
                 <argument id="interaction">
                   <value class="uiInteraction" uri="ui:interaction?name=sfLookup"/>
-                </argument>
-                <argument id="value">
-                  <value class="value" valueClass="string">Anubhav</value>
                 </argument>
                 <argument id="captureBefore">
                   <value class="value" valueClass="string">false</value>
@@ -186,8 +197,9 @@
                 </argument>
                 <argument id="locatorParams"/>
                 <argument id="interactionDescription">
-                  <value class="value" valueClass="string">Lookup the Account Name reference to Anubhav</value>
+                  <value class="value" valueClass="string">Lookup the Account Name reference</value>
                 </argument>
+                <argument id="value"/>
               </arguments>
               <generatedParameters>
                 <apiParam group="value" name="value" passwordVariableAllowed="true" title="Value">
@@ -298,7 +310,30 @@
                         <argument id="captureAfter">
                           <value class="value" valueClass="string">false</value>
                         </argument>
+                        <argument id="ieClickMethod">
+                          <value class="value" valueClass="string">Default</value>
+                        </argument>
+                        <argument id="hover"/>
                       </arguments>
+                      <generatedParameters>
+                        <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
+                          <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                          <type>
+                            <booleanType/>
+                          </type>
+                        </apiParam>
+                        <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                          <summary>How the click should be executed for Internet Explorer.</summary>
+                          <type>
+                            <choiceType>
+                              <constraints>
+                                <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                                <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                              </constraints>
+                            </choiceType>
+                          </type>
+                        </apiParam>
+                      </generatedParameters>
                     </apiCall>
                     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="4642f25c-dd43-4a71-b2a1-a9275d7bf0c5" name="UiDoAction" testItemId="12" title="Click the Account Name button">
                       <arguments>

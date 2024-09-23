@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="ec37f814-00e4-4082-a611-e48d28858a0a" id="5">
+<testCase guid="ec37f814-00e4-4082-a611-e48d28858a0a" id="12">
   <summary/>
   <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="e4214929-9f5e-4cd3-9b50-443e9f356076" name="ApexConnect" testItemId="38" title="Salesforce Connect: SalesforceConnection (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">83a6bd34-fd07-439d-9943-784e3390844a</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="6e66fd5a-8e68-4724-8013-f481e038c03b" name="UiConnect" testItemId="1" title="UI Connect: HTML_Tables">
+      <tags>
+        <string>disabled</string>
+      </tags>
       <arguments>
         <argument id="connectionName">
           <value class="value" valueClass="string">HTML_Tables</value>
@@ -22,6 +67,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="b1eac73b-0eb0-4f4d-a730-b6a736ba6e5b" name="SetValues" testItemId="32" title="Set Values: a">
+      <tags>
+        <string>disabled</string>
+      </tags>
       <arguments>
         <argument id="values">
           <value class="valueList" mutable="Mutable">
@@ -41,6 +89,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="4761c03f-ae97-4384-a3df-201cf19edb95" name="UiWithScreen" testItemId="2" title="On HTMLTablePage page">
+      <tags>
+        <string>disabled</string>
+      </tags>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">HTML_Tables</value>
@@ -69,6 +120,7 @@
         </argument>
         <argument id="uiTargetUrl"/>
       </arguments>
+      <expectedExceptions/>
       <clauses>
         <clause name="substeps" testItemId="3">
           <steps>
@@ -243,6 +295,49 @@
           </type>
         </apiParam>
       </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" guid="4b129d3a-041a-4e68-92fd-4125ba60bd89" name="ApexSoqlQuery" testItemId="39" title="SOQL Query: SELECT COUNT(Id), Name\nFROM Account\nGROUP BY Name=&gt;AccountRows">
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="value" valueClass="string">SELECT COUNT(Id), Name\nFROM Account\nGROUP BY Name</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SalesforceConnection</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">AccountRows</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="52fd5dd6-2c67-40bb-8cd0-7271a3501025" name="ForEach" testItemId="40" title="For Each: {AccountRows}=&gt;AccountName">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="AccountRows"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">AccountName</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="41">
+          <steps/>
+        </clause>
+      </clauses>
     </apiCall>
   </steps>
 </testCase>

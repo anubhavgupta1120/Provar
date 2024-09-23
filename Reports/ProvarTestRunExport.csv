@@ -1,0 +1,3 @@
+run id, started, ended, path, name, successful, skipped, failed, total, failure Message
+13,2024-09-20 18:48:47.723,2024-09-20 18:48:56.332,C:\Users\anubhav.gupta\Provar\Workspace_2\LearningProvar\tests\UOP Course,TableTesting.testcase,1,0,0,,
+Summary,2024-09-20 18:48:47.723,2024-09-20 18:48:56.397,,,1,0,0,1
