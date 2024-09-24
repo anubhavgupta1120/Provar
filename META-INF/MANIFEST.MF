@@ -6,6 +6,7 @@ Bundle-Version: 1.0.0.qualifier
 Require-Bundle: com.provar.core.testapi,
  com.provar.core.model.base,
  com.provar.core.model.ui,
+ com.google.guava,
  com.provar.testrunner,
  com.provar.plugins.sf.apis,
  org.seleniumhq.selenium.selenium-api,

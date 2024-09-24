@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="fd538e4b-63ba-42a3-bccb-b1bdd6487851" id="8" registryId="fd538e4b-63ba-42a3-bccb-b1bdd6487851">
+<testCase guid="fd538e4b-63ba-42a3-bccb-b1bdd6487851" id="1" registryId="fd538e4b-63ba-42a3-bccb-b1bdd6487851">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="c2352487-11cc-423b-99f5-81369e59ef5d" name="ApexConnect" testItemId="1" title="Salesforce Connect: SalesforceConnection (Test)">
@@ -868,12 +868,13 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click and Confirm the Delete button</value>
                 </argument>
+                <argument id="value"/>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
-                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                <apiParam group="value" name="value" passwordVariableAllowed="true" seq="10000" title="Expected Message">
+                  <summary>The expected message.  The test will fail if this is populated and doesn't match the actual message.</summary>
                   <type>
-                    <booleanType/>
+                    <textType/>
                   </type>
                 </apiParam>
               </generatedParameters>
