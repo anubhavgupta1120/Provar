@@ -40,12 +40,14 @@ public class LoginRegisterPage {
 	@FindBy(xpath = "//button[@tabindex ='0' and contains(@class,'MuiButton-containedSizeMedium MuiButtonBase-root')]")
 	private WebElement login;
 
-	public void Register(String user, String pass) {
+	public String Register(String user, String pass) {
 		register.click();
 		username.sendKeys(user);
 		password.sendKeys(pass);
 		confirmPassword.sendKeys(pass);
+		//register.isDisplayed();
 		register.click();
+		return user;
 	}
 
 	public void Login(String user, String pass) {
